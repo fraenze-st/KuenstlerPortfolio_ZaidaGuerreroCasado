@@ -1,0 +1,181 @@
+$light: rgb(250, 250, 250);
+$darkgrey: rgb(47, 47, 47);
+$lighgrey: rgb(233, 233, 233);
+$background: rgb(251, 251, 251);
+$lightorange: rgba(238, 119, 51, 0.5);
+
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0em;
+    margin: 0em;
+    font-family: "Source Sans Pro", sans-serif;
+    color: $darkgrey;
+    line-height: 1.7em;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    height: 100vh;
+    position: relative;
+    scroll-behavior: smooth;
+    font-size: 17px;
+    /* overflow-y: scroll; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    text-transform: capitalize;
+}
+
+body {
+    background-color: $background;
+
+}
+
+// landing page
+#landingPage {
+    height: 100vh;
+    // color: #000000;
+
+
+    .navbar-container {
+        margin: 2rem 10vw 2rem 50vw;
+
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            justify-content: space-between;
+            font-size: 1.4rem;
+
+            .nb-item {
+                margin-left: 3rem;
+                padding: 0.3rem 0.6rem;
+                border-radius: 0.1rem;
+                // background-color: rgba($darkgrey, 0.6);
+                // border: $darkgrey 0.1rem solid;
+
+            }
+        }
+    }
+
+    #heading {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        h1 {
+            font-size: 2.5rem;
+            margin-top: 20vh;
+            letter-spacing: 0.8rem;
+        }
+
+        p {
+            font-size: 1.6rem;
+            letter-spacing: 0.4rem;
+        }
+    }
+
+
+    &::after {
+        content: "";
+        background: url(images/DSC_0061_2a.JPG);
+        background-size: cover;
+        background-attachment: absolute;
+        opacity: 0.9;
+        /* Add the blur effect */
+        // filter: blur(2px);
+        // -webkit-filter: blur(2px);
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+        /* transparent background-image */
+        /* https://css-tricks.com/snippets/css/transparent-background-images/ */
+    }
+}
+
+// projects
+
+#projects-container {
+    // height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 3vw 5vw;
+    // border-top: 0.5rem solid $lightorange;
+
+
+
+    .pc-heading {
+        display: flex;
+
+        h2 {
+            margin: 0rem auto;
+            margin-bottom: 4rem;
+            font-size: 2rem;
+        }
+    }
+
+
+    #project-teaser {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        // grid-template-rows: 20rem 20rem 20rem;
+        grid-gap: 3rem;
+        justify-content: center;
+        // margin: 0 auto;
+
+
+
+        .pt-project {
+
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 1rem;
+            justify-content: center;
+            // border: 1rem solid lightblue;
+            // background-color: $lightgrey;
+            height: 35rem;
+            width: 35rem;
+
+            .image {
+                width: 30rem;
+                height: 25rem;
+                // height: 20rem;
+                object-fit: cover;
+                // border: 1rem $lighgrey solid;
+                border-top: 0.2rem solid $darkgrey;
+                border-bottom: 0.2rem solid $darkgrey;
+                padding: 0.7rem 0;
+            }
+
+            .project-description {
+                text-align: center;
+
+                h4 {
+                    // text-align: center;
+                }
+            }
+
+
+        }
+    }
+}
+
+#contact {
+    padding: 3rem 5vw;
+    background-color: $lighgrey;
+    text-align: center;
+}

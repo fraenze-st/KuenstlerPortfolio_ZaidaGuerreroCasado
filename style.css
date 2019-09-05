@@ -1,0 +1,171 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0em;
+  margin: 0em;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #2f2f2f;
+  line-height: 1.7em;
+}
+
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  height: 100vh;
+  position: relative;
+  scroll-behavior: smooth;
+  font-size: 17px;
+  /* overflow-y: scroll; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: capitalize;
+}
+
+body {
+  background-color: #fbfbfb;
+}
+
+#landingPage {
+  height: 100vh;
+}
+
+#landingPage .navbar-container {
+  margin: 2rem 10vw 2rem 50vw;
+}
+
+#landingPage .navbar-container .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.4rem;
+}
+
+#landingPage .navbar-container .navbar .nb-item {
+  margin-left: 3rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.1rem;
+}
+
+#landingPage #heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+#landingPage #heading h1 {
+  font-size: 2.5rem;
+  margin-top: 20vh;
+  letter-spacing: 0.8rem;
+}
+
+#landingPage #heading p {
+  font-size: 1.6rem;
+  letter-spacing: 0.4rem;
+}
+
+#landingPage::after {
+  content: "";
+  background: url(images/DSC_0061_2a.JPG);
+  background-size: cover;
+  background-attachment: absolute;
+  opacity: 0.9;
+  /* Add the blur effect */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  /* transparent background-image */
+  /* https://css-tricks.com/snippets/css/transparent-background-images/ */
+}
+
+#projects-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3vw 5vw;
+}
+
+#projects-container .pc-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#projects-container .pc-heading h2 {
+  margin: 0rem auto;
+  margin-bottom: 4rem;
+  font-size: 2rem;
+}
+
+#projects-container #project-teaser {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#projects-container #project-teaser .pt-project {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  grid-gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 35rem;
+  width: 35rem;
+}
+
+#projects-container #project-teaser .pt-project .image {
+  width: 30rem;
+  height: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top: 0.2rem solid #2f2f2f;
+  border-bottom: 0.2rem solid #2f2f2f;
+  padding: 0.7rem 0;
+}
+
+#projects-container #project-teaser .pt-project .project-description {
+  text-align: center;
+}
+
+#contact {
+  padding: 3rem 5vw;
+  background-color: #e9e9e9;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
