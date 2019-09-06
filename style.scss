@@ -6,7 +6,6 @@ $lightorange: rgba(238, 119, 51, 0.7);
 
 
 
-
 * {
     box-sizing: border-box;
     padding: 0em;
@@ -98,7 +97,7 @@ body {
 
         h1 {
             font-size: 2.5rem;
-            margin-top: 20vh;
+            margin-top: 25vh;
             letter-spacing: 0.8rem;
         }
 
@@ -135,7 +134,7 @@ body {
     // height: 100vh;
     display: flex;
     flex-direction: column;
-    padding: 2vw 5vw;
+    padding: 4vw 10vw 2vw 10vw;
     // border-top: 0.5rem solid $lightorange;
 
 
@@ -195,8 +194,36 @@ body {
     }
 }
 
+#cv-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 20vw 5vw 20vw;
+
+    .cv-heading {
+        display: flex;
+
+        h2 {
+            margin: 0rem auto;
+            margin-bottom: 4rem;
+            font-size: 2.1rem;
+        }
+    }
+
+    .cv-years {
+        h4 {
+            margin-bottom: 0.4rem;
+            // font-size: 2rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+
 #contact {
-    padding: 3rem 5vw;
+    padding: 2vw 5vw;
     background-color: darken($lightgrey, 15%);
     text-align: center;
 }
