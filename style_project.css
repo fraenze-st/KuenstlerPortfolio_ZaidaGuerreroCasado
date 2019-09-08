@@ -1,6 +1,6 @@
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0em;
   margin: 0em;
   font-family: "Source Sans Pro", sans-serif;
@@ -11,7 +11,7 @@
 *::before,
 *::after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 html {
@@ -54,89 +54,70 @@ body::-webkit-scrollbar-thumb:hover {
   background: rgba(89, 128, 134, 0.7);
 }
 
-#landingPage .navbar-container {
+#projectPage .navbar-container {
   padding: 0.8vw 5vw 0.8vw 5vw;
 }
 
-#landingPage .navbar-container .navbar {
+#projectPage .navbar-container .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   list-style: none;
   -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   font-size: 1.4rem;
 }
 
-#landingPage .navbar-container .navbar #nb-home {
+#projectPage .navbar-container .navbar #nb-home {
   -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
-#landingPage .navbar-container .navbar .nb-item {
-  margin-left: 2rem;
-  padding: 0.3rem 0.6rem;
+#projectPage .navbar-container .navbar .nb-item {
+  padding: 0.3rem 0;
   font-weight: 400;
   letter-spacing: 0.3rem;
 }
 
-#landingPage .navbar-container .navbar .nb-item a {
+#projectPage .navbar-container .navbar .nb-item a {
   text-decoration: none;
 }
 
-#landingPage::after {
-  content: "";
-  background: url(images/DSC_0061_2a.JPG);
-  background-size: cover;
-  background-attachment: absolute;
-  opacity: 0.9;
-  /* Add the blur effect */
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: fixed;
-  z-index: -1;
-  /* transparent background-image */
-  /* https://css-tricks.com/snippets/css/transparent-background-images/ */
+#projectPage .navbar-container .navbar .nb-right {
+  margin-left: 3vw;
 }
 
-.project-details {
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+.main-container {
   background-color: #fafafa;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 40%;
+      grid-template-columns: 1fr 40%;
+  grid-gap: 2vw;
+  padding: 5vw 5vw;
 }
 
-.project-details .pd-heading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.main-container .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
 }
 
-.project-details .pd-heading h2 {
-  margin: 0rem auto;
-  margin-bottom: 4rem;
+.main-container .row .column img {
+  margin-bottom: 2vw;
 }
 
-.project-details #contact {
+#contact {
   padding: 2vw 5vw;
   background-color: #c3c3c3;
   text-align: center;
 }
-
 /*# sourceMappingURL=style_project.css.map */

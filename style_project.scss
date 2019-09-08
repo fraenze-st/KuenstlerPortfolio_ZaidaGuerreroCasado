@@ -62,10 +62,7 @@ body {
 
 
 // landing page
-#landingPage {
-    // height: 100vh;
-    // color: #000000;
-
+#projectPage {
 
     .navbar-container {
         padding: 0.8vw 5vw 0.8vw 5vw;
@@ -86,72 +83,63 @@ body {
 
 
             .nb-item {
-                margin-left: 2rem;
-                padding: 0.3rem 0.6rem;
+                // margin-left: 2rem;
+                padding: 0.3rem 0;
                 font-weight: 400;
                 letter-spacing: 0.3rem;
+                // margin-left: 3vw;
 
                 a {
                     text-decoration: none;
                 }
-
-
             }
+
+            .nb-right {
+                margin-left: 3vw
+            }
+
+
         }
-    }
 
-
-    &::after {
-        content: "";
-        background: url(images/DSC_0061_2a.JPG);
-        background-size: cover;
-        background-attachment: absolute;
-        opacity: 0.9;
-        /* Add the blur effect */
-        // filter: blur(2px);
-        // -webkit-filter: blur(2px);
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        position: fixed;
-        z-index: -1;
-        /* transparent background-image */
-        /* https://css-tricks.com/snippets/css/transparent-background-images/ */
     }
 }
 
+
+
+
+
+
+
+
+
 // projects
-
-.project-details {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.main-container {
     background-color: $light;
-    // margin: 0 4vw;
-    // padding-top: 4vw;
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    grid-gap: 2vw;
+    padding: 5vw 5vw;
 
+    .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        // padding: 0 4vw;
+        // align-items: center;
+        // justify-items: center;
 
-
-    .pd-heading {
-        display: flex;
-
-        h2 {
-            margin: 0rem auto;
-            margin-bottom: 4rem;
-            // font-size: 2.1rem;
+        .column img {
+            margin-bottom: 2vw;
         }
     }
 
+}
 
 
 
 
-    #contact {
-        padding: 2vw 5vw;
-        background-color: darken($lightgrey, 15%);
-        text-align: center;
-    }
-
+#contact {
+    padding: 2vw 5vw;
+    background-color: darken($lightgrey, 15%);
+    text-align: center;
 }
