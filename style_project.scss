@@ -1,0 +1,157 @@
+$light: rgb(250, 250, 250);
+$darkgrey: rgb(47, 47, 47);
+$lightgrey: rgb(233, 233, 233);
+$background: rgb(251, 251, 251);
+$lightorange: rgba(238, 119, 51, 0.7);
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0em;
+    margin: 0em;
+    font-family: "Source Sans Pro", sans-serif;
+    color: $darkgrey;
+    line-height: 1.7em;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    height: 100vh;
+    position: relative;
+    scroll-behavior: smooth;
+    font-size: 17px;
+    /* overflow-y: scroll; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: 2.1rem;
+}
+
+body {
+    background-color: $background;
+
+    &::-webkit-scrollbar-track {
+        background-color: rgba($lightgrey, 0.3);
+    }
+
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(119, 174, 182, 0.7);
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: rgba(89, 128, 134, 0.7);
+    }
+}
+
+
+// landing page
+#landingPage {
+    // height: 100vh;
+    // color: #000000;
+
+
+    .navbar-container {
+        padding: 0.8vw 5vw 0.8vw 5vw;
+        // background-color: rgba($darkgrey, 0.1);
+        // position: fixed;
+
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            justify-content: flex-start;
+            font-size: 1.4rem;
+
+            #nb-home {
+                flex: 1;
+                // https: //www.freecodecamp.org/news/how-to-create-a-fully-responsive-navbar-with-flexbox-a4435d175dd3/
+            }
+
+
+            .nb-item {
+                margin-left: 2rem;
+                padding: 0.3rem 0.6rem;
+                font-weight: 400;
+                letter-spacing: 0.3rem;
+
+                a {
+                    text-decoration: none;
+                }
+
+
+            }
+        }
+    }
+
+
+    &::after {
+        content: "";
+        background: url(images/DSC_0061_2a.JPG);
+        background-size: cover;
+        background-attachment: absolute;
+        opacity: 0.9;
+        /* Add the blur effect */
+        // filter: blur(2px);
+        // -webkit-filter: blur(2px);
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: fixed;
+        z-index: -1;
+        /* transparent background-image */
+        /* https://css-tricks.com/snippets/css/transparent-background-images/ */
+    }
+}
+
+// projects
+
+.project-details {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $light;
+    // margin: 0 4vw;
+    // padding-top: 4vw;
+
+
+
+    .pd-heading {
+        display: flex;
+
+        h2 {
+            margin: 0rem auto;
+            margin-bottom: 4rem;
+            // font-size: 2.1rem;
+        }
+    }
+
+
+
+
+
+    #contact {
+        padding: 2vw 5vw;
+        background-color: darken($lightgrey, 15%);
+        text-align: center;
+    }
+
+}
