@@ -187,6 +187,10 @@ body::-webkit-scrollbar-thumb:hover {
   padding: 0.5rem 0;
 }
 
+#projects-container #project-teaser .pt-project .image:hover {
+  opacity: 0.8;
+}
+
 #projects-container #project-teaser .pt-project .project-description {
   text-align: center;
 }
