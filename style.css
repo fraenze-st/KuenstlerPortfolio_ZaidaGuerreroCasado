@@ -71,21 +71,40 @@ body::-webkit-scrollbar-thumb:hover {
       -ms-flex-direction: row;
           flex-direction: row;
   list-style: none;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   font-size: 1.4rem;
 }
 
+#landingPage .navbar-container .navbar #nb-home {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#landingPage .navbar-container .navbar #nb-home a {
+  padding: 0 0.5rem;
+  color: #626262;
+  border-bottom: 0.1rem solid #626262;
+}
+
 #landingPage .navbar-container .navbar .nb-item {
-  margin-left: 2rem;
-  padding: 0.3rem 0.6rem;
+  padding: 0.3rem 0;
   font-weight: 400;
   letter-spacing: 0.3rem;
 }
 
 #landingPage .navbar-container .navbar .nb-item a {
   text-decoration: none;
+}
+
+#landingPage .navbar-container .navbar .nb-item a:hover {
+  border-bottom: 0.12rem solid #626262;
+}
+
+#landingPage .navbar-container .navbar .nb-right {
+  margin-left: 3vw;
 }
 
 #landingPage #heading {
