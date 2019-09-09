@@ -225,11 +225,13 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 #cv-container .cv-years p {
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
+  line-height: 1.5rem;
 }
 
 #contact {
   padding: 2vw 5vw;
+  background-color: #c3c3c3;
   text-align: center;
 }
 

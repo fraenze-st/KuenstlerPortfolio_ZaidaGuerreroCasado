@@ -189,8 +189,6 @@ body {
             .project-description {
                 text-align: center;
             }
-
-
         }
     }
 }
@@ -222,17 +220,20 @@ body {
         }
 
         p {
-            margin-bottom: 1rem;
+            margin-bottom: 0.7rem;
+            line-height: 1.5rem;
         }
     }
 }
 
-
 #contact {
     padding: 2vw 5vw;
-    // background-color: darken($lightgrey, 15%);
+    background-color: darken($lightgrey, 15%);
     text-align: center;
 }
+
+
+
 
 /* Responsiveness */
 

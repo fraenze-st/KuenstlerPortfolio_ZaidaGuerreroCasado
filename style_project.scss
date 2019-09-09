@@ -102,15 +102,45 @@ body {
         }
 
     }
+
+    .navbar-projects-wrapper {
+        padding: 0.8vw 5vw 0.8vw 5vw;
+
+        .nb-projects {
+            // justify-content: start;
+
+            // margin-left: 1em;
+            text-transform: capitalize;
+            // display: grid;
+            // grid-template-columns: 1fr 1fr 1fr 1fr;
+            // grid-template-rows: repeat(5, min-content);
+            // grid-auto-flow: column;
+            // column-gap: 2em;
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+
+
+            // justify-content: space-between;
+            .nb-p-project {
+                margin-right: 1rem;
+
+                a {
+                    color: darken($lightgrey, 30%);
+                    text-decoration: none;
+
+                    &:hover {
+                        color: darken($lightgrey, 50%);
+                    }
+                }
+            }
+
+        }
+
+    }
+
+
 }
-
-
-
-
-
-
-
-
 
 // projects
 .main-container {
@@ -134,9 +164,6 @@ body {
     }
 
 }
-
-
-
 
 #contact {
     padding: 2vw 5vw;

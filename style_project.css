@@ -93,6 +93,33 @@ body::-webkit-scrollbar-thumb:hover {
   margin-left: 3vw;
 }
 
+#projectPage .navbar-projects-wrapper {
+  padding: 0.8vw 5vw 0.8vw 5vw;
+}
+
+#projectPage .navbar-projects-wrapper .nb-projects {
+  text-transform: capitalize;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+}
+
+#projectPage .navbar-projects-wrapper .nb-projects .nb-p-project {
+  margin-right: 1rem;
+}
+
+#projectPage .navbar-projects-wrapper .nb-projects .nb-p-project a {
+  color: #9d9d9d;
+  text-decoration: none;
+}
+
+#projectPage .navbar-projects-wrapper .nb-projects .nb-p-project a:hover {
+  color: #6a6a6a;
+}
+
 .main-container {
   background-color: #fafafa;
   display: -ms-grid;
