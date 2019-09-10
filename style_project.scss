@@ -245,7 +245,7 @@ body {
 
 @-webkit-keyframes zoom {
     from {
-        -webkit-transform: scale(0)
+        -webkit-transform: scale(0.8)
     }
 
     to {
@@ -255,7 +255,7 @@ body {
 
 @keyframes zoom {
     from {
-        transform: scale(0)
+        transform: scale(0.8)
     }
 
     to {

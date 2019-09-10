@@ -224,7 +224,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 @-webkit-keyframes zoom {
   from {
-    -webkit-transform: scale(0);
+    -webkit-transform: scale(0.8);
   }
   to {
     -webkit-transform: scale(1);
@@ -233,8 +233,8 @@ body::-webkit-scrollbar-thumb:hover {
 
 @keyframes zoom {
   from {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
   to {
     -webkit-transform: scale(1);

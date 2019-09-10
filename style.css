@@ -254,7 +254,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 #contact {
   padding: 2vw 5vw;
-  background-color: #c3c3c3;
+  background-color: rgba(233, 233, 233, 0.7);
   text-align: center;
 }
 
