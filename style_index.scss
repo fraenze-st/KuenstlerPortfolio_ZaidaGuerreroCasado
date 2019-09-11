@@ -1,0 +1,157 @@
+//import color Variables
+@import "./color_Variables";
+
+// import navbar
+@import "./navbar";
+
+// import allg CSS seiten-style
+@import "./allgCSSHtml.scss";
+
+//import Mediaqueries
+@import "./mediaqueries_Index";
+
+
+@mixin contact {
+    padding: 2vw 5vw;
+    background-color: darken($lightgrey, 15%);
+    text-align: center;
+}
+
+
+// landing page
+
+#heading {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    margin: 0 5vw;
+
+    h1 {
+        font-size: 2.5rem;
+        margin-top: 25vh;
+        letter-spacing: 0.8rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+        letter-spacing: 0.4rem;
+    }
+
+    &::after {
+        content: "";
+        background: url(images/DSC_0061_2a.JPG);
+        background-size: cover;
+        background-attachment: absolute;
+        opacity: 0.9;
+        /* Add the blur effect */
+        // filter: blur(2px);
+        // -webkit-filter: blur(2px);
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+        /* transparent background-image */
+        /* https://css-tricks.com/snippets/css/transparent-background-images/ */
+    }
+}
+
+
+// projects
+
+#projects-container {
+
+    // height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 4vw;
+
+
+    .pc-heading {
+        display: flex;
+
+        h2 {
+            margin: 0rem auto;
+            margin-bottom: 4rem;
+            // font-size: 2.1rem;
+        }
+    }
+
+
+    #project-teaser {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        // grid-template-rows: 20rem 20rem 20rem;
+        grid-gap: 2rem;
+        justify-content: center;
+        // align-content: center;
+        margin: 0 auto;
+
+
+
+        .pt-project {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            justify-content: center;
+            height: 30rem;
+            width: 30rem;
+
+            .image {
+                width: 25rem;
+                height: 20rem;
+                // height: 20rem;
+                object-fit: cover;
+                // border: 1rem $lighgrey solid;
+                border-top: 0.16rem solid darken($lightgrey, 30%);
+                border-bottom: 0.16rem solid darken($lightgrey, 30%);
+                padding: 0.5rem 0;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+
+            .project-description {
+                text-align: center;
+            }
+        }
+    }
+}
+
+#cv-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 20vw 5vw 20vw;
+    justify-content: center;
+
+
+    .cv-heading {
+        display: flex;
+
+        h2 {
+            margin: 0rem auto;
+            margin-bottom: 4rem;
+            // font-size: 2.1rem;
+        }
+    }
+
+    .cv-years {
+        margin: 0rem auto;
+        // padding: 2vw 20vw 5vw 20vw;
+
+        h4 {
+            margin-bottom: 0.4rem;
+            // font-size: 2rem;
+        }
+
+        p {
+            margin-bottom: 0.7rem;
+            line-height: 1.5rem;
+        }
+    }
+}
+
+@include contact();

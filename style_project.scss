@@ -1,156 +1,26 @@
-$light: rgb(250, 250, 250);
-$darkgrey: rgb(47, 47, 47);
-$lightgrey: rgb(233, 233, 233);
-$background: rgb(251, 251, 251);
-$lightorange: rgba(238, 119, 51, 0.7);
+//import color Variables
+@import "./color_Variables";
+
+// import Img Enlarger Modal
+@import ".modal_enlargeImg";
+
+// import navbar
+@import "./navbar";
+
+// import navbar of project page
+@import "./navbar_projects";
 
 
-
-* {
-    box-sizing: border-box;
-    padding: 0em;
-    margin: 0em;
-    font-family: "Source Sans Pro", sans-serif;
-    color: $darkgrey;
-    line-height: 1.7em;
-}
-
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
-html {
-    height: 100vh;
-    position: relative;
-    scroll-behavior: smooth;
-    font-size: 17px;
-    /* overflow-y: scroll; */
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-    text-transform: capitalize;
-}
-
-h2 {
-    font-size: 2.1rem;
-}
-
-body {
-    background-color: $background;
-
-    &::-webkit-scrollbar-track {
-        background-color: rgba($lightgrey, 0.3);
-    }
-
-    &::-webkit-scrollbar {
-        width: 10px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-        background-color: rgba(119, 174, 182, 0.7);
-    }
-
-    &::-webkit-scrollbar-thumb:hover {
-        background: rgba(89, 128, 134, 0.7);
-    }
-}
+//import allg CSS seiten-style
+@import "./allgCSSHtml.scss";
 
 
-// landing page
-#projectPage {
-
-    .navbar-container {
-        padding: 0.8vw 5vw 0.8vw 5vw;
-        // background-color: rgba($darkgrey, 0.1);
-        // position: fixed;
-
-        .navbar {
-            display: flex;
-            flex-direction: row;
-            list-style: none;
-            justify-content: flex-start;
-            font-size: 1.4rem;
-
-            #nb-home {
-                flex: 1;
-
-                a {
-                    padding: 0 0.5rem;
-                    border-left: 0.2rem solid darken($lightgrey, 10%);
-                }
-
-                // https: //www.freecodecamp.org/news/how-to-create-a-fully-responsive-navbar-with-flexbox-a4435d175dd3/
-            }
-
-            .nb-item {
-                // margin-left: 2rem;
-                padding: 0.3rem 0;
-                font-weight: 400;
-                letter-spacing: 0.3rem;
-
-                // margin-left: 3vw;
-                a {
-                    text-decoration: none;
-
-                    &:hover {
-                        border-bottom: 0.12rem solid darken($lightgrey, 20%);
-                    }
-                }
-            }
-
-            .nb-right {
-                margin-left: 3vw
-            }
-        }
-    }
-
-    .navbar-projects-wrapper {
-        padding: 0.8vw 5vw 0.8vw 5vw;
-        margin-top: 2vh;
-
-        h4 {
-            letter-spacing: 0.2rem;
-            text-transform: none;
-        }
-
-        .nb-projects {
-            text-transform: capitalize;
-            display: flex;
-            flex-wrap: wrap;
-            list-style: none;
-
-
-            // justify-content: space-between;
-            .nb-p-project {
-                margin-right: 1rem;
-
-
-
-                a {
-                    color: darken($lightgrey, 30%);
-                    text-decoration: none;
-
-                    &:hover {
-                        color: darken($lightgrey, 50%);
-                    }
-                }
-            }
-
-        }
-
-    }
-
-
-}
+@include contact();
 
 // projects
+
 .main-container {
-    background-color: $light;
+    background-color: $background;
     display: grid;
     grid-template-columns: 1fr 40%;
     grid-gap: 2vw;
@@ -159,7 +29,7 @@ body {
     .row {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 2rem;
+        grid-gap: 2vw;
         // padding: 0 4vw;
         // align-items: center;
         // justify-items: center;
@@ -181,109 +51,3 @@ body {
 // https: //www.inserthtml.com/2012/04/css-image-gallery/
 // https: //codepen.io/ongtiffany/pen/BoOeQV
 // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img
-
-
-#contact {
-    padding: 2vw 5vw;
-    background-color: darken($lightgrey, 15%);
-    text-align: center;
-}
-
-
-/* The Modal (background) */
-.modal {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    padding-top: 100px;
-    /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
-    overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.9);
-    /* Black w/ opacity */
-}
-
-/* Modal Content (image) */
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
-
-/* Caption of Modal Image */
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-}
-
-/* Add Animation */
-.modal-content,
-#caption {
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-    from {
-        -webkit-transform: scale(0.8)
-    }
-
-    to {
-        -webkit-transform: scale(1)
-    }
-}
-
-@keyframes zoom {
-    from {
-        transform: scale(0.8)
-    }
-
-    to {
-        transform: scale(1)
-    }
-}
-
-/* The Close Button */
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
-    .modal-content {
-        width: 100%;
-    }
-}

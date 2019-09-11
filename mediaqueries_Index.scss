@@ -1,0 +1,209 @@
+/* Responsiveness */
+
+
+@media screen and (max-width: 1100px) {
+    h2 {
+        font-size: 1.9rem;
+    }
+
+
+    .navbar-container {
+        padding: 0.8vw 5vw 0.8vw 5vw;
+
+        .navbar {
+            font-size: 1.2rem;
+
+            .nb-item {
+                margin-left: 1rem;
+                padding: 0.3rem 0.6rem;
+                letter-spacing: 0.3rem;
+            }
+        }
+    }
+
+    #heading {
+        h1 {
+            font-size: 2rem;
+            margin-top: 25vh;
+        }
+
+        p {
+            font-size: 1.4rem;
+            letter-spacing: 0.4rem;
+        }
+    }
+
+
+
+
+    #projects-container {
+        #project-teaser {
+            grid-gap: 2rem;
+
+            .pt-project {
+
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                border: 0.5rem solid lightblue;
+                height: 25rem;
+                width: 25rem;
+
+                .image {
+                    width: 20rem;
+                    height: 15rem;
+                    // height: 20rem;
+                    object-fit: cover;
+                    // border: 1rem $lighgrey solid;
+                    border-top: 0.2rem solid darken($lightgrey, 30%);
+                    border-bottom: 0.2rem solid darken($lightgrey, 30%);
+                    padding: 0.7rem 0;
+                }
+            }
+        }
+    }
+
+    #cv-container {
+        padding: 2vw 17vw 5vw 17vw;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+
+    .navbar-container {
+        padding: 0.8vw 5vw 0.8vw 5vw;
+
+        .navbar {
+            font-size: 1.1rem;
+
+            .nb-item {
+                margin-left: 1rem;
+                padding: 0.3rem 0.6rem;
+                letter-spacing: 0.3rem;
+            }
+        }
+    }
+
+    #heading {
+        h1 {
+            font-size: 2rem;
+            margin-top: 25vh;
+        }
+
+        p {
+            font-size: 1.4rem;
+            letter-spacing: 0.4rem;
+        }
+    }
+
+
+    #projects-container {
+        #project-teaser {
+            grid-template-columns: 1fr;
+            grid-gap: 2rem;
+
+            .pt-project {
+                border: 0.5rem solid rgb(224, 217, 177);
+                height: 25rem;
+                width: 25rem;
+
+                .image {
+                    width: 20rem;
+                    height: 15rem;
+                    // height: 20rem;
+                    object-fit: cover;
+                    // border: 1rem $lighgrey solid;
+                    border-top: 0.2rem solid darken($lightgrey, 30%);
+                    border-bottom: 0.2rem solid darken($lightgrey, 30%);
+                    padding: 0.7rem 0;
+                }
+            }
+        }
+    }
+
+    #cv-container {
+        padding: 2vw 17vw 5vw 17vw;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h4 {
+        font-size: 0.9rem;
+    }
+
+
+
+    .navbar-container {
+        padding: 0.8vw 5vw 0.8vw 5vw;
+
+        .navbar {
+            font-size: 0.8rem;
+
+            .nb-item {
+                margin-left: 1rem;
+                padding: 0.3rem 0.6rem;
+                letter-spacing: 0.3rem;
+            }
+        }
+    }
+
+    #heading {
+        h1 {
+            font-size: 1.5rem;
+            margin-top: 25vh;
+        }
+
+        p {
+            font-size: 1rem;
+            letter-spacing: 0.4rem;
+        }
+    }
+
+
+    #projects-container {
+        .pc-heading {
+            h2 {
+                margin-bottom: 1rem;
+                // font-size: 2.1rem;
+            }
+        }
+
+        #project-teaser {
+            grid-template-columns: 1fr;
+            grid-gap: 0.5rem;
+
+            .pt-project {
+                border: 0.5rem solid rgb(214, 177, 224);
+                height: 17rem;
+                width: 17rem;
+
+                .image {
+                    width: 15rem;
+                    height: 10rem;
+                    // height: 20rem;
+                    object-fit: cover;
+                    // border: 1rem $lighgrey solid;
+                    border-top: 0.1rem solid darken($lightgrey, 30%);
+                    border-bottom: 0.1rem solid darken($lightgrey, 30%);
+                    padding: 0.4rem 0;
+                }
+            }
+        }
+    }
+
+    #cv-container {
+        padding: 2vw 8vw 5vw 8vw;
+    }
+}

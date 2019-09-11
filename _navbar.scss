@@ -1,0 +1,55 @@
+//import Mediaqueries
+@import "./mediaqueries_Index";
+
+//mixin padding container
+@mixin PaddingContainer {
+    padding: 0.8vw 5vw 0.8vw 5vw;
+}
+
+
+.navbar-container {
+    @include PaddingContainer();
+    // background-color: rgba($darkgrey, 0.1);
+    // position: fixed;
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: flex-start;
+        font-size: 1.4rem;
+
+        #nb-home {
+            flex: 1;
+
+            a {
+                padding: 0 0.5rem;
+                color: lighten($darkgrey, 20%);
+                border-bottom: 0.1rem solid lighten($darkgrey, 20%);
+                // border-left: 0.2rem solid darken($lightgrey, 10%);
+            }
+
+            // https: //www.freecodecamp.org/news/how-to-create-a-fully-responsive-navbar-with-flexbox-a4435d175dd3/
+        }
+
+        .nb-item {
+            // margin-left: 2rem;
+            padding: 0.3rem 0;
+            font-weight: 400;
+            letter-spacing: 0.3rem;
+
+            // margin-left: 3vw;
+            a {
+                text-decoration: none;
+
+                &:hover {
+                    border-bottom: 0.12rem solid lighten($darkgrey, 20%);
+                }
+            }
+        }
+
+        .nb-right {
+            margin-left: 3vw
+        }
+    }
+}

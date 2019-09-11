@@ -1,0 +1,562 @@
+/* Responsiveness */
+@media screen and (max-width: 1100px) {
+  h2 {
+    font-size: 1.9rem;
+  }
+  #landingPage .navbar-container {
+    padding: 0.8vw 5vw 0.8vw 5vw;
+  }
+  #landingPage .navbar-container .navbar {
+    font-size: 1.2rem;
+  }
+  #landingPage .navbar-container .navbar .nb-item {
+    margin-left: 1rem;
+    padding: 0.3rem 0.6rem;
+    letter-spacing: 0.3rem;
+  }
+  #landingPage #heading h1 {
+    font-size: 2rem;
+    margin-top: 25vh;
+  }
+  #landingPage #heading p {
+    font-size: 1.4rem;
+    letter-spacing: 0.4rem;
+  }
+  #projects-container #project-teaser {
+    grid-gap: 2rem;
+  }
+  #projects-container #project-teaser .pt-project {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: 0.5rem solid lightblue;
+    height: 25rem;
+    width: 25rem;
+  }
+  #projects-container #project-teaser .pt-project .image {
+    width: 20rem;
+    height: 15rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-top: 0.2rem solid #9d9d9d;
+    border-bottom: 0.2rem solid #9d9d9d;
+    padding: 0.7rem 0;
+  }
+  #cv-container {
+    padding: 2vw 17vw 5vw 17vw;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  h2 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  #landingPage .navbar-container {
+    padding: 0.8vw 5vw 0.8vw 5vw;
+  }
+  #landingPage .navbar-container .navbar {
+    font-size: 1.1rem;
+  }
+  #landingPage .navbar-container .navbar .nb-item {
+    margin-left: 1rem;
+    padding: 0.3rem 0.6rem;
+    letter-spacing: 0.3rem;
+  }
+  #landingPage #heading h1 {
+    font-size: 2rem;
+    margin-top: 25vh;
+  }
+  #landingPage #heading p {
+    font-size: 1.4rem;
+    letter-spacing: 0.4rem;
+  }
+  #projects-container #project-teaser {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+  #projects-container #project-teaser .pt-project {
+    border: 0.5rem solid #e0d9b1;
+    height: 25rem;
+    width: 25rem;
+  }
+  #projects-container #project-teaser .pt-project .image {
+    width: 20rem;
+    height: 15rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-top: 0.2rem solid #9d9d9d;
+    border-bottom: 0.2rem solid #9d9d9d;
+    padding: 0.7rem 0;
+  }
+  #cv-container {
+    padding: 2vw 17vw 5vw 17vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+  h4 {
+    font-size: 0.9rem;
+  }
+  #landingPage .navbar-container {
+    padding: 0.8vw 5vw 0.8vw 5vw;
+  }
+  #landingPage .navbar-container .navbar {
+    font-size: 0.8rem;
+  }
+  #landingPage .navbar-container .navbar .nb-item {
+    margin-left: 1rem;
+    padding: 0.3rem 0.6rem;
+    letter-spacing: 0.3rem;
+  }
+  #landingPage #heading h1 {
+    font-size: 1.5rem;
+    margin-top: 25vh;
+  }
+  #landingPage #heading p {
+    font-size: 1rem;
+    letter-spacing: 0.4rem;
+  }
+  #projects-container .pc-heading h2 {
+    margin-bottom: 1rem;
+  }
+  #projects-container #project-teaser {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem;
+  }
+  #projects-container #project-teaser .pt-project {
+    border: 0.5rem solid #d6b1e0;
+    height: 17rem;
+    width: 17rem;
+  }
+  #projects-container #project-teaser .pt-project .image {
+    width: 15rem;
+    height: 10rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-top: 0.1rem solid #9d9d9d;
+    border-bottom: 0.1rem solid #9d9d9d;
+    padding: 0.4rem 0;
+  }
+  #cv-container {
+    padding: 2vw 8vw 5vw 8vw;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0em;
+  margin: 0em;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #2f2f2f;
+  line-height: 1.7em;
+}
+
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  height: 100vh;
+  position: relative;
+  scroll-behavior: smooth;
+  font-size: 17px;
+  /* overflow-y: scroll; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: capitalize;
+}
+
+h2 {
+  font-size: 2.1rem;
+}
+
+body {
+  background-color: #fbfbfb;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: rgba(233, 233, 233, 0.3);
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(119, 174, 182, 0.7);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: rgba(89, 128, 134, 0.7);
+}
+
+#landingPage .navbar-container {
+  padding: 0.8vw 5vw 0.8vw 5vw;
+}
+
+#landingPage .navbar-container .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 1.4rem;
+}
+
+#landingPage .navbar-container .navbar #nb-home {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#landingPage .navbar-container .navbar #nb-home a {
+  padding: 0 0.5rem;
+  color: #626262;
+  border-bottom: 0.1rem solid #626262;
+}
+
+#landingPage .navbar-container .navbar .nb-item {
+  padding: 0.3rem 0;
+  font-weight: 400;
+  letter-spacing: 0.3rem;
+}
+
+#landingPage .navbar-container .navbar .nb-item a {
+  text-decoration: none;
+}
+
+#landingPage .navbar-container .navbar .nb-item a:hover {
+  border-bottom: 0.12rem solid #626262;
+}
+
+#landingPage .navbar-container .navbar .nb-right {
+  margin-left: 3vw;
+}
+
+#landingPage #heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin: 0 5vw;
+}
+
+#landingPage #heading h1 {
+  font-size: 2.5rem;
+  margin-top: 25vh;
+  letter-spacing: 0.8rem;
+}
+
+#landingPage #heading p {
+  font-size: 1.6rem;
+  letter-spacing: 0.4rem;
+}
+
+#landingPage::after {
+  content: "";
+  background: url(images/DSC_0061_2a.JPG);
+  background-size: cover;
+  background-attachment: absolute;
+  opacity: 0.9;
+  /* Add the blur effect */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  /* transparent background-image */
+  /* https://css-tricks.com/snippets/css/transparent-background-images/ */
+}
+
+#projects-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 4vw;
+}
+
+#projects-container .pc-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#projects-container .pc-heading h2 {
+  margin: 0rem auto;
+  margin-bottom: 4rem;
+}
+
+#projects-container #project-teaser {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+#projects-container #project-teaser .pt-project {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30rem;
+  width: 30rem;
+}
+
+#projects-container #project-teaser .pt-project .image {
+  width: 25rem;
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top: 0.16rem solid #9d9d9d;
+  border-bottom: 0.16rem solid #9d9d9d;
+  padding: 0.5rem 0;
+}
+
+#projects-container #project-teaser .pt-project .image:hover {
+  opacity: 0.8;
+}
+
+#projects-container #project-teaser .pt-project .project-description {
+  text-align: center;
+}
+
+#cv-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2vw 20vw 5vw 20vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#cv-container .cv-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#cv-container .cv-heading h2 {
+  margin: 0rem auto;
+  margin-bottom: 4rem;
+}
+
+#cv-container .cv-years {
+  margin: 0rem auto;
+}
+
+#cv-container .cv-years h4 {
+  margin-bottom: 0.4rem;
+}
+
+#cv-container .cv-years p {
+  margin-bottom: 0.7rem;
+  line-height: 1.5rem;
+}
+
+#contact {
+  padding: 2vw 5vw;
+  background-color: rgba(233, 233, 233, 0.7);
+  text-align: center;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 1100px) {
+  h2 {
+    font-size: 1.9rem;
+  }
+  #landingPage .navbar-container {
+    padding: 0.8vw 5vw 0.8vw 5vw;
+  }
+  #landingPage .navbar-container .navbar {
+    font-size: 1.2rem;
+  }
+  #landingPage .navbar-container .navbar .nb-item {
+    margin-left: 1rem;
+    padding: 0.3rem 0.6rem;
+    letter-spacing: 0.3rem;
+  }
+  #landingPage #heading h1 {
+    font-size: 2rem;
+    margin-top: 25vh;
+  }
+  #landingPage #heading p {
+    font-size: 1.4rem;
+    letter-spacing: 0.4rem;
+  }
+  #projects-container #project-teaser {
+    grid-gap: 2rem;
+  }
+  #projects-container #project-teaser .pt-project {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    border: 0.5rem solid lightblue;
+    height: 25rem;
+    width: 25rem;
+  }
+  #projects-container #project-teaser .pt-project .image {
+    width: 20rem;
+    height: 15rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-top: 0.2rem solid #9d9d9d;
+    border-bottom: 0.2rem solid #9d9d9d;
+    padding: 0.7rem 0;
+  }
+  #cv-container {
+    padding: 2vw 17vw 5vw 17vw;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  h2 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  #landingPage .navbar-container {
+    padding: 0.8vw 5vw 0.8vw 5vw;
+  }
+  #landingPage .navbar-container .navbar {
+    font-size: 1.1rem;
+  }
+  #landingPage .navbar-container .navbar .nb-item {
+    margin-left: 1rem;
+    padding: 0.3rem 0.6rem;
+    letter-spacing: 0.3rem;
+  }
+  #landingPage #heading h1 {
+    font-size: 2rem;
+    margin-top: 25vh;
+  }
+  #landingPage #heading p {
+    font-size: 1.4rem;
+    letter-spacing: 0.4rem;
+  }
+  #projects-container #project-teaser {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+  #projects-container #project-teaser .pt-project {
+    border: 0.5rem solid #e0d9b1;
+    height: 25rem;
+    width: 25rem;
+  }
+  #projects-container #project-teaser .pt-project .image {
+    width: 20rem;
+    height: 15rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-top: 0.2rem solid #9d9d9d;
+    border-bottom: 0.2rem solid #9d9d9d;
+    padding: 0.7rem 0;
+  }
+  #cv-container {
+    padding: 2vw 17vw 5vw 17vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+  h4 {
+    font-size: 0.9rem;
+  }
+  #landingPage .navbar-container {
+    padding: 0.8vw 5vw 0.8vw 5vw;
+  }
+  #landingPage .navbar-container .navbar {
+    font-size: 0.8rem;
+  }
+  #landingPage .navbar-container .navbar .nb-item {
+    margin-left: 1rem;
+    padding: 0.3rem 0.6rem;
+    letter-spacing: 0.3rem;
+  }
+  #landingPage #heading h1 {
+    font-size: 1.5rem;
+    margin-top: 25vh;
+  }
+  #landingPage #heading p {
+    font-size: 1rem;
+    letter-spacing: 0.4rem;
+  }
+  #projects-container .pc-heading h2 {
+    margin-bottom: 1rem;
+  }
+  #projects-container #project-teaser {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 0.5rem;
+  }
+  #projects-container #project-teaser .pt-project {
+    border: 0.5rem solid #d6b1e0;
+    height: 17rem;
+    width: 17rem;
+  }
+  #projects-container #project-teaser .pt-project .image {
+    width: 15rem;
+    height: 10rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-top: 0.1rem solid #9d9d9d;
+    border-bottom: 0.1rem solid #9d9d9d;
+    padding: 0.4rem 0;
+  }
+  #cv-container {
+    padding: 2vw 8vw 5vw 8vw;
+  }
+}
+/*# sourceMappingURL=style_index.css.map */

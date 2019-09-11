@@ -1,0 +1,153 @@
+/* Responsiveness */
+@media screen and (max-width: 1100px) {
+  h2 {
+    font-size: 1.9rem;
+  }
+  #landingPage .navbar-container {
+    padding: 0.8vw 5vw 0.8vw 5vw;
+  }
+  #landingPage .navbar-container .navbar {
+    font-size: 1.2rem;
+  }
+  #landingPage .navbar-container .navbar .nb-item {
+    margin-left: 1rem;
+    padding: 0.3rem 0.6rem;
+    letter-spacing: 0.3rem;
+  }
+  #landingPage #heading h1 {
+    font-size: 2rem;
+    margin-top: 25vh;
+  }
+  #landingPage #heading p {
+    font-size: 1.4rem;
+    letter-spacing: 0.4rem;
+  }
+  #projects-container #project-teaser {
+    grid-gap: 2rem;
+  }
+  #projects-container #project-teaser .pt-project {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: 0.5rem solid lightblue;
+    height: 25rem;
+    width: 25rem;
+  }
+  #projects-container #project-teaser .pt-project .image {
+    width: 20rem;
+    height: 15rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-top: 0.2rem solid #9d9d9d;
+    border-bottom: 0.2rem solid #9d9d9d;
+    padding: 0.7rem 0;
+  }
+  #cv-container {
+    padding: 2vw 17vw 5vw 17vw;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  h2 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  #landingPage .navbar-container {
+    padding: 0.8vw 5vw 0.8vw 5vw;
+  }
+  #landingPage .navbar-container .navbar {
+    font-size: 1.1rem;
+  }
+  #landingPage .navbar-container .navbar .nb-item {
+    margin-left: 1rem;
+    padding: 0.3rem 0.6rem;
+    letter-spacing: 0.3rem;
+  }
+  #landingPage #heading h1 {
+    font-size: 2rem;
+    margin-top: 25vh;
+  }
+  #landingPage #heading p {
+    font-size: 1.4rem;
+    letter-spacing: 0.4rem;
+  }
+  #projects-container #project-teaser {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+  #projects-container #project-teaser .pt-project {
+    border: 0.5rem solid #e0d9b1;
+    height: 25rem;
+    width: 25rem;
+  }
+  #projects-container #project-teaser .pt-project .image {
+    width: 20rem;
+    height: 15rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-top: 0.2rem solid #9d9d9d;
+    border-bottom: 0.2rem solid #9d9d9d;
+    padding: 0.7rem 0;
+  }
+  #cv-container {
+    padding: 2vw 17vw 5vw 17vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+  h4 {
+    font-size: 0.9rem;
+  }
+  #landingPage .navbar-container {
+    padding: 0.8vw 5vw 0.8vw 5vw;
+  }
+  #landingPage .navbar-container .navbar {
+    font-size: 0.8rem;
+  }
+  #landingPage .navbar-container .navbar .nb-item {
+    margin-left: 1rem;
+    padding: 0.3rem 0.6rem;
+    letter-spacing: 0.3rem;
+  }
+  #landingPage #heading h1 {
+    font-size: 1.5rem;
+    margin-top: 25vh;
+  }
+  #landingPage #heading p {
+    font-size: 1rem;
+    letter-spacing: 0.4rem;
+  }
+  #projects-container .pc-heading h2 {
+    margin-bottom: 1rem;
+  }
+  #projects-container #project-teaser {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem;
+  }
+  #projects-container #project-teaser .pt-project {
+    border: 0.5rem solid #d6b1e0;
+    height: 17rem;
+    width: 17rem;
+  }
+  #projects-container #project-teaser .pt-project .image {
+    width: 15rem;
+    height: 10rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-top: 0.1rem solid #9d9d9d;
+    border-bottom: 0.1rem solid #9d9d9d;
+    padding: 0.4rem 0;
+  }
+  #cv-container {
+    padding: 2vw 8vw 5vw 8vw;
+  }
+}
+/*# sourceMappingURL=mediaqueries_Index.css.map */

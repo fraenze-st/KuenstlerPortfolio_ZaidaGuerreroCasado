@@ -1,0 +1,34 @@
+.navbar-projects-wrapper {
+    @include PaddingContainer();
+    margin-top: 2vh;
+
+    h4 {
+        letter-spacing: 0.2rem;
+        text-transform: none;
+    }
+
+    .nb-projects {
+
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+
+
+        // justify-content: space-between;
+        .nb-p-project {
+            margin-right: 1rem;
+
+
+            a {
+                color: darken($lightgrey, 30%);
+                // text-decoration: none;
+
+                &:hover {
+                    color: darken($lightgrey, 50%);
+                }
+            }
+        }
+
+    }
+
+}
