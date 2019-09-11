@@ -2,10 +2,10 @@
 @import "./color_Variables";
 
 // import Img Enlarger Modal
-@import ".modal_enlargeImg";
+@import "./modal_enlargeImg";
 
-// import navbar
-@import "./navbar";
+// // import navbar
+// @import "./navbar";
 
 // import navbar of project page
 @import "./navbar_projects";
@@ -15,7 +15,8 @@
 @import "./allgCSSHtml.scss";
 
 
-@include contact();
+
+
 
 // projects
 
@@ -44,6 +45,12 @@
         }
 
     }
+}
+
+contact {
+    padding: 2vw 5vw;
+    background-color: darken($lightgrey, 15%);
+    text-align: center;
 }
 
 

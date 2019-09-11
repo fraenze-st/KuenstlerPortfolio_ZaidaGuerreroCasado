@@ -1,10 +1,69 @@
+// import navbar
+// @import "./navbar";
+
+
+
+//mixin padding container
+@mixin PaddingContainer {
+    padding: 0.8vw 5vw 0.8vw 5vw;
+}
+
+
+.navbar-container {
+    @include PaddingContainer();
+    // background-color: rgba($darkgrey, 0.1);
+    // position: fixed;
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: flex-start;
+        font-size: 1.4rem;
+
+        #nb-home {
+            flex: 1;
+
+            a {
+                padding: 0 0.5rem;
+                border-left: 0.2rem solid darken($lightgrey, 10%);
+            }
+
+            // https: //www.freecodecamp.org/news/how-to-create-a-fully-responsive-navbar-with-flexbox-a4435d175dd3/
+        }
+
+        .nb-item {
+            // margin-left: 2rem;
+            padding: 0.3rem 0;
+            font-weight: 400;
+            letter-spacing: 0.3rem;
+
+            // margin-left: 3vw;
+            a {
+                text-decoration: none;
+                color: lighten($darkgrey, 10%);
+
+                &:hover {
+                    border-bottom: 0.12rem solid lighten($darkgrey, 50%);
+                }
+            }
+        }
+
+        .nb-right {
+            margin-left: 3vw
+        }
+    }
+}
+
 .navbar-projects-wrapper {
     @include PaddingContainer();
     margin-top: 2vh;
 
     h4 {
-        letter-spacing: 0.2rem;
+        letter-spacing: 0.3rem;
+        font-size: 1.2rem;
         text-transform: none;
+        color: lighten($darkgrey, 10%);
     }
 
     .nb-projects {
@@ -12,23 +71,33 @@
         display: flex;
         flex-wrap: wrap;
         list-style: none;
+        margin-top: 0.5rem;
 
-
-        // justify-content: space-between;
         .nb-p-project {
-            margin-right: 1rem;
+            margin-right: 0.6rem;
 
+            .nbpp-link {
+                color: darken($lightgrey, 35%);
+                text-decoration: none;
+                font-size: 1.1rem;
+                letter-spacing: 0.07rem;
+                padding: 0.3rem 0.4rem;
+                // color: green;
+                text-transform: uppercase;
 
-            a {
-                color: darken($lightgrey, 30%);
-                // text-decoration: none;
 
                 &:hover {
                     color: darken($lightgrey, 50%);
                 }
             }
+
+            .active {
+                color: lighten($darkgrey, 10%);
+                font-size: 1.15rem;
+                background: rgba($lightgrey, 0.5);
+            }
         }
 
-    }
 
+    }
 }

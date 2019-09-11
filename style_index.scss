@@ -11,13 +11,6 @@
 @import "./mediaqueries_Index";
 
 
-@mixin contact {
-    padding: 2vw 5vw;
-    background-color: darken($lightgrey, 15%);
-    text-align: center;
-}
-
-
 // landing page
 
 #heading {
@@ -144,6 +137,7 @@
 
         h4 {
             margin-bottom: 0.4rem;
+            margin-top: 1rem;
             // font-size: 2rem;
         }
 
@@ -154,4 +148,8 @@
     }
 }
 
-@include contact();
+contact {
+    padding: 2vw 5vw;
+    background-color: darken($lightgrey, 15%);
+    text-align: center;
+}

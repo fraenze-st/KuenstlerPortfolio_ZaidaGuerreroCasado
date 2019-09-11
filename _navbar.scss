@@ -45,6 +45,10 @@
                 &:hover {
                     border-bottom: 0.12rem solid lighten($darkgrey, 20%);
                 }
+
+                &:active {
+                    background-color: rgba($lightgrey, 0.6);
+                }
             }
         }
 

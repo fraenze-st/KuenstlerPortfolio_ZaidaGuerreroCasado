@@ -6,7 +6,7 @@
     padding: 0em;
     margin: 0em;
     font-family: "Source Sans Pro", sans-serif;
-    color: $darkgrey;
+    color: lighten($darkgrey, 10%);
     line-height: 1.7em;
 
     &::before,
