@@ -1,20 +1,19 @@
 //import color Variables
-@import "./color_Variables";
+@import "imports/color_Variables";
 
 // import Img Enlarger Modal
-@import "./modal_enlargeImg";
+@import "imports/modal_enlargeImg";
 
-// // import navbar
-// @import "./navbar";
 
 // import navbar of project page
-@import "./navbar_projects";
+@import "imports/navbar_projects";
 
 
 //import allg CSS seiten-style
-@import "./allgCSSHtml.scss";
+@import "imports/allgCSSHtml.scss";
 
-
+//import contact
+@import "imports/contact";
 
 
 
@@ -47,11 +46,7 @@
     }
 }
 
-contact {
-    padding: 2vw 5vw;
-    background-color: darken($lightgrey, 15%);
-    text-align: center;
-}
+
 
 
 // https: //www.hongkiat.com/blog/css-image-zoom-onclick/

@@ -1,17 +1,36 @@
 //import color Variables
-@import "./color_Variables";
-
-// import navbar
-@import "./navbar";
+@import "imports/color_Variables";
 
 // import allg CSS seiten-style
-@import "./allgCSSHtml.scss";
+@import "imports/allgCSSHtml.scss";
+
+// import navbar
+@import "imports/navbar";
+
 
 //import Mediaqueries
-@import "./mediaqueries_Index";
+@import "imports/mediaqueries_Index";
+
+@import "imports/contact";
+
+@mixin sub-heading {
+    display: flex;
+
+    h2 {
+        margin: 0rem auto;
+        margin-top: 1.5rem;
+        letter-spacing: 0.3rem;
+        font-size: 2.3rem;
+    }
+}
 
 
 // landing page
+
+#landingPage {
+    height: 100vh;
+}
+
 
 #heading {
     display: flex;
@@ -33,7 +52,7 @@
 
     &::after {
         content: "";
-        background: url(images/DSC_0061_2a.JPG);
+        background: url(../images/DSC_0061_2a.JPG);
         background-size: cover;
         background-attachment: absolute;
         opacity: 0.9;
@@ -64,13 +83,9 @@
 
 
     .pc-heading {
-        display: flex;
+        @include sub-heading();
+        margin-bottom: 4rem;
 
-        h2 {
-            margin: 0rem auto;
-            margin-bottom: 4rem;
-            // font-size: 2.1rem;
-        }
     }
 
 
@@ -89,7 +104,7 @@
             display: grid;
             grid-template-rows: 1fr 1fr;
             justify-content: center;
-            height: 30rem;
+            height: 25rem;
             width: 30rem;
 
             .image {
@@ -122,22 +137,18 @@
 
 
     .cv-heading {
-        display: flex;
-
-        h2 {
-            margin: 0rem auto;
-            margin-bottom: 4rem;
-            // font-size: 2.1rem;
-        }
+        @include sub-heading();
+        margin-bottom: 2rem;
     }
 
     .cv-years {
         margin: 0rem auto;
+        align-content: center;
         // padding: 2vw 20vw 5vw 20vw;
 
         h4 {
             margin-bottom: 0.4rem;
-            margin-top: 1rem;
+            margin-top: 1.7rem;
             // font-size: 2rem;
         }
 
@@ -146,10 +157,4 @@
             line-height: 1.5rem;
         }
     }
-}
-
-contact {
-    padding: 2vw 5vw;
-    background-color: darken($lightgrey, 15%);
-    text-align: center;
 }

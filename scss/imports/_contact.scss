@@ -1,0 +1,39 @@
+#contact {
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 5vw 4vw 5vw;
+    border-top: 0.2rem solid $lightgrey;
+    // background-color: $lightgrey;
+    // background-image: url(../../images/contact.JPG);
+    // background-size: cover;
+
+    .contact-heading {
+        margin-bottom: 2.5rem;
+        letter-spacing: 0.3rem;
+        text-align: center;
+        // font-size: 2.3rem;
+    }
+
+    .contact-details {
+        display: grid;
+        grid-template-columns: 60% 1fr;
+        grid-gap: 3rem;
+        justify-content: center;
+
+        h4 {
+            font-size: 1.3rem;
+            text-transform: none;
+            letter-spacing: 0.2rem;
+            margin-bottom: 1rem;
+            // color: lighten($darkgrey: 30%);
+            color: darken($lightgrey, 50%);
+        }
+
+        p {
+            font-size: 1.2rem;
+
+        }
+
+    }
+
+}

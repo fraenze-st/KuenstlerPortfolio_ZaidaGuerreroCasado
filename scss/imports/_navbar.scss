@@ -1,5 +1,5 @@
-//import Mediaqueries
-@import "./mediaqueries_Index";
+// //import Mediaqueries
+// @import "./mediaqueries_Index";
 
 //mixin padding container
 @mixin PaddingContainer {
@@ -44,10 +44,6 @@
 
                 &:hover {
                     border-bottom: 0.12rem solid lighten($darkgrey, 20%);
-                }
-
-                &:active {
-                    background-color: rgba($lightgrey, 0.6);
                 }
             }
         }
