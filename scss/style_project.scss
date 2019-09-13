@@ -1,5 +1,5 @@
-//import color Variables
-@import "imports/color_Variables";
+//import Variables
+@import "imports/variables";
 
 // import Img Enlarger Modal
 @import "imports/modal_enlargeImg";
@@ -8,16 +8,12 @@
 // import navbar of project page
 @import "imports/navbar";
 
-
-
 //import allg CSS seiten-style
 @import "imports/allgCSSHtml.scss";
 
 //import contact
 @import "imports/contact";
 
-// import mediaqueries project page
-@import "imports/_mediaqueries_projectpage";
 
 //slightly different navbar styling than index page
 #nb-home {

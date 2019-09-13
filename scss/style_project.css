@@ -332,7 +332,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 #contact .contact-details h4 {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   text-transform: none;
   letter-spacing: 0.2rem;
   margin-bottom: 1rem;
@@ -340,7 +340,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 #contact .contact-details p {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 #nb-home a {

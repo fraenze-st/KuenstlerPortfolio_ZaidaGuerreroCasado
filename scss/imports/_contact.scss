@@ -1,3 +1,19 @@
+@mixin sub-heading {
+    display: flex;
+
+    h2 {
+        margin: 0rem auto;
+        margin-top: 1.5rem;
+        letter-spacing: 0.3rem;
+        font-size: 2.3rem;
+
+        @media #{$middle} {
+            font-size: 1.9rem;
+            // color: green;
+        }
+    }
+}
+
 #contact-container {
     margin-bottom: 8vh;
 }
@@ -57,7 +73,7 @@
         padding-bottom: 4vw;
 
         h4 {
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             text-transform: none;
             letter-spacing: 0.2rem;
             margin-bottom: 1rem;
@@ -66,7 +82,7 @@
         }
 
         p {
-            font-size: 1.2rem;
+            font-size: 1rem;
 
         }
 
