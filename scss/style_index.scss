@@ -9,9 +9,12 @@
 
 
 //import Mediaqueries
-@import "imports/mediaqueries_Index";
+// @import "imports/mediaqueries_Index";
 
 @import "imports/contact";
+
+
+
 
 @mixin sub-heading {
     display: flex;
@@ -21,6 +24,11 @@
         margin-top: 1.5rem;
         letter-spacing: 0.3rem;
         font-size: 2.3rem;
+
+        @media #{$middle} {
+            font-size: 1.9rem;
+            // color: green;
+        }
     }
 }
 
@@ -42,12 +50,24 @@
     h1 {
         font-size: 2.5rem;
         margin-top: 25vh;
+        margin-bottom: 0.5rem;
         letter-spacing: 0.8rem;
+
+        @media #{$middle} {
+            font-size: 1.9rem;
+            margin-top: 13vh;
+            // color: green;
+        }
     }
 
     p {
-        font-size: 1.6rem;
+        font-size: 1.6em;
         letter-spacing: 0.4rem;
+
+        @media #{$middle} {
+            font-size: 1.2rem;
+        }
+
         // color: $darkgrey;
     }
 
@@ -71,6 +91,27 @@
     }
 }
 
+//different navbar styling thatn project page
+
+#nb-home {
+    // flex: 1;
+
+    a {
+        // padding: 0 0.5rem;
+        color: lighten($darkgrey, 20%);
+        border-bottom: 0.1rem solid lighten($darkgrey, 20%);
+        // border-left: 0.2rem solid darken($lightgrey, 10%);
+    }
+}
+
+.nb-item {
+    a {
+        &:hover {
+            border-bottom: 0.12rem solid lighten($darkgrey, 20%);
+        }
+    }
+}
+
 
 // projects
 
@@ -86,18 +127,20 @@
     .pc-heading {
         @include sub-heading();
         margin-bottom: 4rem;
-
     }
-
 
     #project-teaser {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        // grid-template-rows: 20rem 20rem 20rem;
-        grid-gap: 2rem;
+        grid-gap: 8vw;
         justify-content: center;
-        // align-content: center;
         margin: 0 auto;
+
+        @media #{$middle} {
+            grid-template-columns: 1fr;
+            // grid-gap: 4vw;
+        }
+
 
 
 
@@ -105,31 +148,49 @@
             display: grid;
             grid-template-rows: 1fr 1fr;
             justify-content: center;
-            height: 25rem;
-            width: 30rem;
+            width: 25rem;
+            height: 22rem;
+
+
+            @media #{$middle} {
+                width: 20rem;
+                height: 17rem;
+
+            }
+
 
             .image {
                 width: 25rem;
                 height: 20rem;
-                // height: 20rem;
-                object-fit: cover;
-                // border: 1rem $lighgrey solid;
-                border-top: 0.16rem solid darken($lightgrey, 30%);
-                border-bottom: 0.16rem solid darken($lightgrey, 30%);
-                padding: 0.5rem 0;
-                cursor: pointer;
 
-                &:hover {
-                    opacity: 0.8;
+                @media #{$middle} {
+                    width: 20rem;
+                    height: 15rem;
                 }
             }
+        }
 
-            .project-description {
-                text-align: center;
+        .image {
+
+            // height: 20rem;
+            object-fit: cover;
+            // border: 1rem $lighgrey solid;
+            border-top: 0.16rem solid darken($lightgrey, 30%);
+            border-bottom: 0.16rem solid darken($lightgrey, 30%);
+            padding: 0.5rem 0;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.8;
             }
+        }
+
+        .project-description {
+            text-align: center;
         }
     }
 }
+
 
 #cv-container {
     display: flex;
@@ -157,6 +218,7 @@
         p {
             margin-bottom: 0.7rem;
             line-height: 1.5rem;
+            font-size: 1rem;
         }
     }
 }

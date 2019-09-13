@@ -6,7 +6,8 @@
 
 
 // import navbar of project page
-@import "imports/navbar_projects";
+@import "imports/navbar";
+
 
 
 //import allg CSS seiten-style
@@ -15,6 +16,30 @@
 //import contact
 @import "imports/contact";
 
+// import mediaqueries project page
+@import "imports/_mediaqueries_projectpage";
+
+//slightly different navbar styling than index page
+#nb-home {
+    // flex: 1;
+
+    a {
+        // padding: 0 0.5rem;
+        border-left: 0.2rem solid darken($lightgrey, 10%);
+
+    }
+}
+
+.nb-item {
+
+    a {
+        color: lighten($darkgrey, 15%);
+
+        &:hover {
+            border-bottom: 0.12rem solid lighten($darkgrey, 50%);
+        }
+    }
+}
 
 
 // projects
@@ -30,6 +55,11 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 2vw;
+
+        @media screen and (max-width: 850px) {
+            grid-template-columns: 1fr
+        }
+
         // padding: 0 4vw;
         // align-items: center;
         // justify-items: center;
@@ -46,6 +76,7 @@
 
     }
 }
+
 
 
 

@@ -19,13 +19,18 @@
         justify-content: flex-start;
         font-size: 1.4rem;
 
+        @media #{$middle} {
+            font-size: 1rem;
+            // color: green;
+        }
+
         #nb-home {
             flex: 1;
 
             a {
                 padding: 0 0.5rem;
-                color: lighten($darkgrey, 20%);
-                border-bottom: 0.1rem solid lighten($darkgrey, 20%);
+                // color: lighten($darkgrey, 20%);
+                // border-bottom: 0.1rem solid lighten($darkgrey, 20%);
                 // border-left: 0.2rem solid darken($lightgrey, 10%);
             }
 
@@ -42,9 +47,9 @@
             a {
                 text-decoration: none;
 
-                &:hover {
-                    border-bottom: 0.12rem solid lighten($darkgrey, 20%);
-                }
+                // &:hover {
+                //     // border-bottom: 0.12rem solid lighten($darkgrey, 20%);
+                // }
             }
         }
 
@@ -52,4 +57,71 @@
             margin-left: 3vw
         }
     }
+}
+
+.navbar-projects-wrapper {
+    @include PaddingContainer();
+    margin-top: 2vh;
+
+    h4 {
+        letter-spacing: 0.3rem;
+        font-size: 1.2rem;
+        text-transform: none;
+        color: lighten($darkgrey, 10%);
+    }
+
+    .nb-projects {
+
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin-top: 0.5rem;
+
+        .nb-p-project {
+            margin-right: 0.6rem;
+
+            .nbpp-link {
+                color: darken($lightgrey, 35%);
+                text-decoration: none;
+                font-size: 1.1rem;
+                letter-spacing: 0.07rem;
+                padding: 0.3rem 0.4rem;
+                // color: green;
+                text-transform: uppercase;
+
+                @media #{$middle} {
+                    font-size: 0.9rem;
+                    // color: green;
+                }
+
+                @media #{$small} {
+                    font-size: 0.8rem;
+                    // color: green;
+                }
+
+
+                &:hover {
+                    color: darken($lightgrey, 50%);
+                }
+            }
+
+
+            .active {
+                color: lighten($darkgrey, 10%);
+                font-size: 1.15rem;
+                background: rgba($lightgrey, 0.5);
+
+                @media #{$middle} {
+                    font-size: 0.95rem;
+                    // color: green;
+                }
+
+                @media #{$small} {
+                    font-size: 0.85rem;
+                    // color: green;
+                }
+            }
+        }
+    }
+
 }

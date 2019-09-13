@@ -1,3 +1,4 @@
+// $(document).ready(function () {
 // navbar active-class
 var navProjects = document.querySelectorAll(".nbpp-link");
 // Loop through the links and add the active class to the current/clicked link
@@ -39,3 +40,5 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function () {
     modal.style.display = "none";
 }
+
+// });

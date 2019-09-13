@@ -36,15 +36,11 @@
 
 
 
-
     #projects-container {
         #project-teaser {
             grid-gap: 2rem;
 
             .pt-project {
-
-                display: grid;
-                grid-template-rows: 1fr 1fr;
                 border: 0.5rem solid lightblue;
                 height: 25rem;
                 width: 25rem;
@@ -107,11 +103,13 @@
 
     #projects-container {
         #project-teaser {
+            // display: grid;
+            // flex-direction: row;
             grid-template-columns: 1fr;
-            grid-gap: 2rem;
+            grid-gap: 5rem;
 
             .pt-project {
-                border: 0.5rem solid rgb(224, 217, 177);
+                border: 0.5rem solid yellow;
                 height: 25rem;
                 width: 25rem;
 
@@ -132,8 +130,8 @@
     #cv-container {
         padding: 2vw 17vw 5vw 17vw;
     }
-}
 
+}
 
 @media screen and (max-width: 480px) {
     h2 {
