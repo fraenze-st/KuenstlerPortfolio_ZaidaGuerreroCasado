@@ -37,6 +37,7 @@
         .project-image {
             margin-bottom: 2vw;
             transition: 0.1s ease-in;
+            cursor: pointer;
 
             &:hover {
                 opacity: 0.8;
