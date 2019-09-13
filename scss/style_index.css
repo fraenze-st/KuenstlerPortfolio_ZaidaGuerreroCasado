@@ -254,16 +254,47 @@ body::-webkit-scrollbar-thumb:hover {
   }
 }
 
-#contact {
+#contact-container {
+  margin-bottom: 8vh;
+}
+
+.trennungsbalken {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 2vw 5vw 4vw 5vw;
-  border-top: 0.2rem solid #e9e9e9;
+  height: 0.2rem;
+  margin: 0 7vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.trennungsbalken .trennungsbalken-links,
+.trennungsbalken .trennungsbalken-rechts {
+  background-color: #888888;
+  width: 1vw;
+}
+
+#contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.2rem 1fr 0.2rem;
+      grid-template-columns: 0.2rem 1fr 0.2rem;
+  padding: 0 7vw;
+  grid-gap: 4vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact .cd-side-left,
+#contact .cd-side-right {
+  height: 1vw;
+  background-color: #888888;
+}
+
+#contact .cd-side-middle {
+  padding-bottom: 2vw;
 }
 
 #contact .contact-heading {
@@ -281,6 +312,7 @@ body::-webkit-scrollbar-thumb:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 4vw;
 }
 
 #contact .contact-details h4 {
