@@ -41,10 +41,12 @@
     padding: 0 7vw;
     grid-gap: 4vw;
     align-items: center;
+
     // border-top: 0.2rem solid $lightgrey;
     // background-color: $lightgrey;
     // background-image: url(../../images/contact.0JPG);
     // background-size: cover;
+
 
     .cd-side-left,
     .cd-side-right {
@@ -72,6 +74,16 @@
         justify-content: center;
         padding-bottom: 4vw;
 
+        @media #{$middle} {
+            grid-gap: 1.5rem;
+            // color: green;
+        }
+
+        @media #{$small} {
+            grid-gap: 0.8rem;
+            // color: green;
+        }
+
         h4 {
             font-size: 1.1rem;
             text-transform: none;
@@ -79,10 +91,20 @@
             margin-bottom: 1rem;
             // color: lighten($darkgrey: 30%);
             color: lighten($darkgrey, 20%);
+
+            @media #{$small} {
+                font-size: 0.9rem;
+                // color: green;
+            }
         }
 
         p {
             font-size: 1rem;
+
+            @media #{$small} {
+                font-size: 0.9rem;
+                // color: green;
+            }
 
         }
 

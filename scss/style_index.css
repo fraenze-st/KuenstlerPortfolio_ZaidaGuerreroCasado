@@ -78,6 +78,12 @@ body::-webkit-scrollbar-thumb:hover {
   }
 }
 
+@media (max-width: 480px) {
+  .navbar-container .navbar {
+    font-size: 1rem;
+  }
+}
+
 .navbar-container .navbar #nb-home {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -232,6 +238,18 @@ body::-webkit-scrollbar-thumb:hover {
   padding-bottom: 4vw;
 }
 
+@media (min-width: 481px) and (max-width: 860px) {
+  #contact .contact-details {
+    grid-gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #contact .contact-details {
+    grid-gap: 0.8rem;
+  }
+}
+
 #contact .contact-details h4 {
   font-size: 1.1rem;
   text-transform: none;
@@ -240,8 +258,20 @@ body::-webkit-scrollbar-thumb:hover {
   color: #646464;
 }
 
+@media (max-width: 480px) {
+  #contact .contact-details h4 {
+    font-size: 0.9rem;
+  }
+}
+
 #contact .contact-details p {
   font-size: 1rem;
+}
+
+@media (max-width: 480px) {
+  #contact .contact-details p {
+    font-size: 0.9rem;
+  }
 }
 
 #landingPage {

@@ -47,12 +47,21 @@
     grid-gap: 2vw;
     padding: 5vw 5vw;
 
+    @media #{$small} {
+        grid-template-columns: 1fr;
+    }
+
+
     .row {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 2vw;
 
-        @media screen and (max-width: 850px) {
+        @media #{$middle} {
+            grid-template-columns: 1fr
+        }
+
+        @media #{$small} {
             grid-template-columns: 1fr
         }
 
@@ -70,7 +79,17 @@
             }
         }
 
+
     }
+
+    .project-description {
+
+        //stellt die Projekt-beschreibung ueber die Bilder
+        @media #{$small} {
+            grid-row-start: 1;
+        }
+    }
+
 }
 
 
