@@ -51,4 +51,10 @@ body {
     &::-webkit-scrollbar-thumb:hover {
         background: rgba(89, 128, 134, 0.7);
     }
+
+    @media #{$small} {
+        overflow-x: hidden;
+    }
+
+
 }
