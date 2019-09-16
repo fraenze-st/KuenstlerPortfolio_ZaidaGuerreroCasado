@@ -6,11 +6,11 @@
 
 // import navbar
 @import "imports/navbar";
-
+@import "imports/mediaqueries_navbar";
 
 @import "imports/contact";
 
-@import "imports/mediaqueries_navbar";
+
 
 
 @mixin sub-heading {
@@ -20,10 +20,20 @@
         margin: 0rem auto;
         margin-top: 1.5rem;
         letter-spacing: 0.3rem;
-        font-size: 2.3rem;
+        font-size: 2.1rem;
+
+        @media #{$tall} {
+            font-size: 1.7rem;
+            // color: green;
+        }
 
         @media #{$middle} {
-            font-size: 1.9rem;
+            font-size: 1.4rem;
+            // color: green;
+        }
+
+        @media #{$small} {
+            font-size: 1.2rem;
             // color: green;
         }
     }
@@ -61,22 +71,28 @@ h5 {
     text-transform: capitalize;
 }
 
-h2 {
-    font-size: 2.1rem;
-}
-
 h4 {
+    font-size: 1.1rem;
+
+    @media #{$tall} {
+        font-size: 1rem;
+    }
+
     @media #{$small} {
         font-size: 0.8rem;
     }
-
 }
 
 p {
+    @media #{$tall} {
+        font-size: 0.93rem;
+    }
+
     @media #{$small} {
         font-size: 0.7rem;
     }
 }
+
 
 body {
     background-color: $background;
@@ -100,8 +116,6 @@ body {
 }
 
 
-// landing page
-
 #landingPage {
     height: 100vh;
 }
@@ -115,24 +129,41 @@ body {
     margin: 0 5vw;
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 2.4rem;
         margin-top: 25vh;
         margin-bottom: 0.5rem;
         letter-spacing: 0.8rem;
 
+        @media #{$tall} {
+            font-size: 2rem;
+        }
+
         @media #{$middle} {
-            font-size: 1.9rem;
-            margin-top: 13vh;
+            font-size: 1.5rem;
+            margin-top: 25vh;
+        }
+
+        @media #{$small} {
+            font-size: 1.2rem;
+            margin-top: 20vh;
             // color: green;
         }
     }
 
     p {
-        font-size: 1.6em;
+        font-size: 1.4em;
         letter-spacing: 0.4rem;
 
-        @media #{$middle} {
+        @media #{$tall} {
             font-size: 1.2rem;
+        }
+
+        @media #{$middle} {
+            font-size: 1rem;
+        }
+
+        @media #{$small} {
+            font-size: 0.8rem;
         }
 
         // color: $darkgrey;
@@ -160,24 +191,7 @@ body {
 
 //different navbar styling thatn project page
 
-#nb-home {
-    // flex: 1;
 
-    a {
-        // padding: 0 0.5rem;
-        color: lighten($darkgrey, 20%);
-        border-bottom: 0.1rem solid lighten($darkgrey, 20%);
-        // border-left: 0.2rem solid darken($lightgrey, 10%);
-    }
-}
-
-.nb-item {
-    a {
-        &:hover {
-            border-bottom: 0.12rem solid lighten($darkgrey, 20%);
-        }
-    }
-}
 
 
 // projects
@@ -259,8 +273,6 @@ body {
 
         .project-description {
             text-align: center;
-
-
         }
     }
 }
@@ -273,12 +285,12 @@ body {
     justify-content: center;
 
     @media #{$small} {
-        padding: 5vw 5vw 5vw 5vw;
+        padding: 10vw 5vw 10vw 5vw;
     }
 
     .cv-heading {
         @include sub-heading();
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 
     .cv-years {

@@ -14,6 +14,33 @@
 //import contact
 @import "imports/contact";
 
+@mixin sub-heading {
+    display: flex;
+
+    h2 {
+        margin: 0rem auto;
+        margin-top: 1.5rem;
+        letter-spacing: 0.3rem;
+        font-size: 2.1rem;
+
+        @media #{$tall} {
+            font-size: 1.7rem;
+            // color: green;
+        }
+
+        @media #{$middle} {
+            font-size: 1.4rem;
+            // color: green;
+        }
+
+        @media #{$small} {
+            font-size: 1.2rem;
+            // color: green;
+        }
+    }
+}
+
+
 * {
     box-sizing: border-box;
     padding: 0em;
@@ -45,8 +72,18 @@ h5 {
     text-transform: capitalize;
 }
 
-h2 {
-    font-size: 2.1rem;
+h4 {
+    font-size: 1.1rem;
+
+    @media #{$small} {
+        font-size: 0.8rem;
+    }
+}
+
+p {
+    @media #{$small} {
+        font-size: 0.7rem;
+    }
 }
 
 body {
@@ -68,35 +105,41 @@ body {
         background: rgba(89, 128, 134, 0.7);
     }
 
-    @media #{$small} {
-        overflow-x: hidden;
-    }
-
-
 }
 
 
-// //slightly different navbar styling than index page
-// #nb-home {
-//     // flex: 1;
+.navbar-container {
+    .navbar-home {
 
-//     a {
-//         // padding: 0 0.5rem;
-//         border-left: 0.2rem solid darken($lightgrey, 10%);
+        a {
+            // padding: 0 0.5rem;
+            border-left: 0.2rem solid darken($lightgrey, 10%);
 
-//     }
-// }
+            color: lighten($darkgrey, 15%);
 
-// .nb-item {
+            &:hover {
+                background-color: rgba($lightgrey, 0.9);
+            }
+        }
+    }
 
-//     a {
-//         color: lighten($darkgrey, 15%);
+    // .navbar-links {
+    //     border-top: 0.08rem solid lighten($darkgrey, 50%);
+    // }
 
-//         &:hover {
-//             border-bottom: 0.12rem solid lighten($darkgrey, 50%);
-//         }
-//     }
-// }
+    .nb-right {
+        letter-spacing: 0.3rem;
+
+        // margin-left: 3vw;
+        a {
+            color: lighten($darkgrey, 30%);
+
+            &:hover {
+                background-color: rgba($lightgrey, 0.9);
+            }
+        }
+    }
+}
 
 
 // projects
@@ -106,10 +149,11 @@ body {
     display: grid;
     grid-template-columns: 1fr 40%;
     grid-gap: 2vw;
-    padding: 5vw 5vw;
+    padding: 2vw 5vw;
 
     @media #{$small} {
         grid-template-columns: 1fr;
+        padding: 5vw 5vw;
     }
 
 
@@ -144,6 +188,27 @@ body {
     }
 
     .project-description {
+        h4 {
+            font-size: 1.1rem;
+
+            @media #{$middle} {
+                font-size: 0.95rem;
+            }
+
+            @media #{$small} {
+                font-size: 0.8rem;
+            }
+        }
+
+        p {
+            @media #{$middle} {
+                font-size: 0.8rem;
+            }
+
+            @media #{$small} {
+                font-size: 0.7rem;
+            }
+        }
 
         //stellt die Projekt-beschreibung ueber die Bilder
         @media #{$small} {
