@@ -8,34 +8,95 @@
 // import navbar of project page
 @import "imports/navbar";
 
-//import allg CSS seiten-style
-@import "imports/allgCSSHtml.scss";
+//import mediaqueries of navbar
+@import "imports/mediaqueries_navbar";
 
 //import contact
 @import "imports/contact";
 
+* {
+    box-sizing: border-box;
+    padding: 0em;
+    margin: 0em;
+    font-family: "Source Sans Pro", sans-serif;
+    color: $darkgrey;
+    line-height: 1.7em;
 
-//slightly different navbar styling than index page
-#nb-home {
-    // flex: 1;
-
-    a {
-        // padding: 0 0.5rem;
-        border-left: 0.2rem solid darken($lightgrey, 10%);
-
+    &::before,
+    &::after {
+        box-sizing: inherit;
     }
 }
 
-.nb-item {
 
-    a {
-        color: lighten($darkgrey, 15%);
-
-        &:hover {
-            border-bottom: 0.12rem solid lighten($darkgrey, 50%);
-        }
-    }
+html {
+    height: 100vh;
+    position: relative;
+    scroll-behavior: smooth;
+    font-size: 17px;
+    /* overflow-y: scroll; */
 }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: 2.1rem;
+}
+
+body {
+    background-color: $background;
+
+    &::-webkit-scrollbar-track {
+        background-color: rgba($lightgrey, 0.3);
+    }
+
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(119, 174, 182, 0.7);
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: rgba(89, 128, 134, 0.7);
+    }
+
+    @media #{$small} {
+        overflow-x: hidden;
+    }
+
+
+}
+
+
+// //slightly different navbar styling than index page
+// #nb-home {
+//     // flex: 1;
+
+//     a {
+//         // padding: 0 0.5rem;
+//         border-left: 0.2rem solid darken($lightgrey, 10%);
+
+//     }
+// }
+
+// .nb-item {
+
+//     a {
+//         color: lighten($darkgrey, 15%);
+
+//         &:hover {
+//             border-bottom: 0.12rem solid lighten($darkgrey, 50%);
+//         }
+//     }
+// }
 
 
 // projects

@@ -13,7 +13,7 @@
     list-style: none;
     font-size: 1.4rem;
     letter-spacing: 0.3rem;
-    min-height: 8vh;
+    height: 5vh;
 
     @media #{$middle} {
         font-size: 1.2rem;
@@ -37,20 +37,24 @@
         }
     }
 
+    .navbar-burger {
+        visibility: hidden;
+
+        @media #{$middle} {
+            visibility: visible;
+
+        }
+    }
+
     .navbar-links {
         display: flex;
         list-style: none;
         justify-content: space-between;
-        width: 70%;
+        width: 40%;
 
         @media screen and (max-width: 1024px) {
-            width: 70%;
+            width: 50%;
         }
-
-        @media #{$middle} {
-            width: 70%;
-        }
-
 
     }
 
@@ -87,62 +91,11 @@
 }
 
 
-
-// @media screen and (max-width: 480px) {
-
-
-
-
-
-
-
-// alte navbar
-//     justify-content: flex-start;
-//     font-size: 1.4rem;
-
-//     @media #{$middle} {
-//         font-size: 1rem;
-//         // color: green;
-//     }
-
-//     @media #{$small} {
-//         font-size: 1rem;
-//         // color: green;
-//     }
-
-//     .navbar {
-//         .nb-item {
-//             // margin-left: 2rem;
-//             padding: 0.3rem 0;
-//             font-weight: 400;
-//             letter-spacing: 0.3rem;
-
-//             // margin-left: 3vw;
-//             a {
-//                 text-decoration: none;
-
-//                 // &:hover {
-//                 //     // border-bottom: 0.12rem solid lighten($darkgrey, 20%);
-//                 // }
-//             }
-//         }
-
-//         .nb-right {
-//             margin-left: 3vw
-//         }
-//     }
-// }
-
-
-
-
-
-
 // navbar projekte 
 
 .navbar-projects-wrapper {
     @include PaddingContainer();
-    margin-top: 2vh;
+    margin-top: 4vh;
 
     h4 {
         letter-spacing: 0.3rem;

@@ -1,95 +1,37 @@
-@media screen and (max-width: 480px) {
+ @media #{$middle} {
 
-    /* body {
-            display: none;
-        } */
-    body {
-        overflow-x: hidden;
-    }
+     .navbar-container {
+         display: grid;
+         grid-template-columns: 90% 1fr;
+         font-size: 1rem;
 
+         .navbar-links {
+             display: none;
+             flex-direction: row;
+             border-top: 0.08rem solid $darkgrey;
+             background: rgba($darkgrey, 0.1);
+             z-index: 2;
+             position: absolute;
+             top: 5vh;
+             left: 5vw;
+             justify-content: space-between;
+             width: 90%;
 
-    .navbar-container {
-        display: grid;
-        grid-template-columns: 90% 1fr;
+             .nb-right {
+                 margin: 0;
+                 padding: 0;
 
-        font-size: 1rem;
-        // position: relative;
-        // display: flex;
-        // list-style: none;
-        // font-size: 1.4rem;
-        // letter-spacing: 0.3rem;
-        // min-height: 8vh;
+                 a {
+                     margin-left: 0;
+                 }
+             }
+         }
+     }
 
-        // @media #{$middle} {
-        //     font-size: 1.2rem;
-        // }
+     .navbar-burger {
+         display: block;
+         z-index: 299;
 
+     }
 
-
-        // .navbar-home {
-        //     // flex: 1;
-        // }
-
-
-        .navbar-links {
-            display: none;
-            flex-direction: column;
-            border-left: 0.1rem solid $darkgrey;
-            padding-left: 0.5rem;
-
-            // grid-column: 1/2;
-            // grid-auto-columns: 2;
-
-            // display: flex;
-            // flex-direction: column;
-
-            // // grid-column-start: 3;
-            // //     display: flex;
-            // //     list-style: none;
-            // justify-content: flex-end;
-            //     width: 60%;
-            //     // font-size: 1rem;
-
-            .nb-right {
-                // justify-content: space-around;
-                margin: 0;
-                padding: 0;
-
-                a {
-                    margin-left: 0;
-                }
-            }
-        }
-
-    }
-
-    // .navbar-links {}
-}
-
-
-
-.navbar-burger {
-    display: block;
-    z-index: 299;
-
-}
-
-
-// .nav-active {
-//     transform: translateY(0%);
-//     background-color: $lightgrey;
-// }
-
-
-
-// @keyframes navLinkFade {
-//     from {
-//         opacity: 0;
-//         transform: translateY(-50px);
-//     }
-
-//     to {
-//         opacity: 1;
-//         transform: translateY(0px);
-//     }
-// }
+ }

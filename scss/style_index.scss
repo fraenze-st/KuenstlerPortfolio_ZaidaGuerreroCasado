@@ -2,7 +2,7 @@
 @import "imports/variables";
 
 // import allg CSS seiten-style
-@import "imports/allgCSSHtml.scss";
+// @import "imports/html.scss";
 
 // import navbar
 @import "imports/navbar";
@@ -27,6 +27,76 @@
             // color: green;
         }
     }
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0em;
+    margin: 0em;
+    font-family: "Source Sans Pro", sans-serif;
+    color: $darkgrey;
+    line-height: 1.7em;
+
+    &::before,
+    &::after {
+        box-sizing: inherit;
+    }
+}
+
+
+html {
+    height: 100vh;
+    position: relative;
+    scroll-behavior: smooth;
+    font-size: 17px;
+    /* overflow-y: scroll; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: 2.1rem;
+}
+
+h4 {
+    @media #{$small} {
+        font-size: 0.8rem;
+    }
+
+}
+
+p {
+    @media #{$small} {
+        font-size: 0.7rem;
+    }
+}
+
+body {
+    background-color: $background;
+
+    &::-webkit-scrollbar-track {
+        background-color: rgba($lightgrey, 0.3);
+    }
+
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(119, 174, 182, 0.7);
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: rgba(89, 128, 134, 0.7);
+    }
+
 }
 
 
@@ -139,8 +209,6 @@
         }
 
 
-
-
         .pt-project {
             display: grid;
             grid-template-rows: 1fr 1fr;
@@ -149,41 +217,50 @@
             height: 22rem;
 
 
+
             @media #{$middle} {
                 width: 20rem;
                 height: 17rem;
-
+                margin-bottom: 4vh;
             }
 
+            @media #{$small} {
+                width: 15rem;
+                height: 12rem;
+            }
 
             .image {
+                object-fit: cover;
+                border-top: 0.16rem solid darken($lightgrey, 30%);
+                border-bottom: 0.16rem solid darken($lightgrey, 30%);
+                padding: 0.5rem 0;
                 width: 25rem;
                 height: 20rem;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 0.8;
+                }
 
                 @media #{$middle} {
                     width: 20rem;
                     height: 15rem;
+
                 }
-            }
-        }
 
-        .image {
-
-            // height: 20rem;
-            object-fit: cover;
-            // border: 1rem $lighgrey solid;
-            border-top: 0.16rem solid darken($lightgrey, 30%);
-            border-bottom: 0.16rem solid darken($lightgrey, 30%);
-            padding: 0.5rem 0;
-            cursor: pointer;
-
-            &:hover {
-                opacity: 0.8;
+                @media #{$small} {
+                    width: 15rem;
+                    height: 10rem;
+                    border-top: 0.1rem solid darken($lightgrey, 30%);
+                    border-bottom: 0.1rem solid darken($lightgrey, 30%);
+                }
             }
         }
 
         .project-description {
             text-align: center;
+
+
         }
     }
 }
@@ -195,6 +272,9 @@
     padding: 2vw 20vw 5vw 20vw;
     justify-content: center;
 
+    @media #{$small} {
+        padding: 5vw 5vw 5vw 5vw;
+    }
 
     .cv-heading {
         @include sub-heading();
@@ -215,7 +295,12 @@
         p {
             margin-bottom: 0.7rem;
             line-height: 1.5rem;
-            font-size: 1rem;
+            // font-size: 1rem;
+
+            // @media #{$small} {
+            //     font-size: 0.8rem;
+            // }
+
         }
     }
 }
