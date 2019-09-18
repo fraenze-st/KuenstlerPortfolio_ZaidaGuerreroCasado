@@ -1,16 +1,16 @@
-// const navSlide = () => {
-const burger = document.querySelector(".navbar-burger");
-const navbarUL = document.querySelector('.navbar-links');
-const navLinks = document.querySelectorAll('.nb-right');
+// // const navSlide = () => {
+// const burger = document.querySelector(".navbar-burger");
+// const navbarUL = document.querySelector('.navbar-links');
+// const navLinks = document.querySelectorAll('.nb-right');
 
 
-burger.addEventListener("click", function () {
-    if (navbarUL.style.display === "flex") {
-        navbarUL.style.display = "none"
-    } else {
-        navbarUL.style.display = "flex"
-    }
-});
+// burger.addEventListener("click", function () {
+//     if (navbarUL.style.display === "flex") {
+//         navbarUL.style.display = "none"
+//     } else {
+//         navbarUL.style.display = "flex"
+//     }
+// });
 
 
 
