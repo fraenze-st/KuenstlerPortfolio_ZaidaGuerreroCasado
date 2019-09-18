@@ -9,7 +9,7 @@
 @import "imports/navbar";
 
 //import mediaqueries of navbar
-@import "imports/mediaqueries_navbar";
+// @import "imports/mediaqueries_navbar";
 
 //import contact
 @import "imports/contact";
@@ -81,6 +81,10 @@ h4 {
 }
 
 p {
+    @media #{$middle} {
+        font-size: 0.8rem;
+    }
+
     @media #{$small} {
         font-size: 0.7rem;
     }
@@ -200,15 +204,7 @@ body {
             }
         }
 
-        p {
-            @media #{$middle} {
-                font-size: 0.8rem;
-            }
 
-            @media #{$small} {
-                font-size: 0.7rem;
-            }
-        }
 
         //stellt die Projekt-beschreibung ueber die Bilder
         @media #{$small} {

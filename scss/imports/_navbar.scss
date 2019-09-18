@@ -15,6 +15,10 @@
     font-size: 1.4rem;
     letter-spacing: 0.3rem;
 
+    @media #{$middle} {
+        flex-direction: column;
+    }
+
     // height: 4rem;
     a {
         @media #{$tall} {
@@ -38,11 +42,17 @@
             color: lighten($darkgrey, 10%);
             padding: 0.2rem 0.5rem;
             border-left: 0.2rem solid lighten($darkgrey, 30%);
+            // border-bottom: 0.2rem solid lighten($darkgrey, 30%);
 
             &:hover {
                 background-color: rgba($darkgrey, 0.1);
                 // border-bottom: 0.12rem solid lighten($darkgrey, 20%);
             }
+
+            @media #{$middle} {
+                border-bottom: 0.15rem solid lighten($darkgrey, 30%);
+            }
+
         }
     }
 
@@ -61,19 +71,20 @@
         justify-content: space-between;
         width: 35%;
 
-
-
         @media screen and (max-width: 1024px) {
             width: 40%;
         }
 
+        @media #{$middle} {
+            width: 50%;
+        }
     }
 
-
-
-    // }
-
     .nb-right {
+        @media #{$middle} {
+            margin: 0 0.5rem 0 0;
+            padding: 0;
+        }
 
         a {
             text-decoration: none;
@@ -81,6 +92,10 @@
             padding: 0.2rem 0.5rem;
 
             color: lighten($darkgrey, 10%);
+
+            @media #{$middle} {
+                margin-left: 0;
+            }
 
             &:hover {
                 background-color: rgba($darkgrey, 0.1);
@@ -91,21 +106,21 @@
     }
 }
 
-.navbar-burger {
-    display: none;
-    cursor: pointer;
-    // height: 0.8rem;
+// .navbar-burger {
+//     display: none;
+//     cursor: pointer;
+//     // height: 0.8rem;
 
-    .fa-bars {
-        color: lighten($darkgrey, 20%);
-        font-size: 0.9rem;
-    }
+//     .fa-bars {
+//         color: lighten($darkgrey, 20%);
+//         font-size: 0.9rem;
+//     }
 
-    @media #{$small} {
-        display: block;
+//     @media #{$small} {
+//         display: block;
 
-    }
-}
+//     }
+// }
 
 
 // navbar projekte 

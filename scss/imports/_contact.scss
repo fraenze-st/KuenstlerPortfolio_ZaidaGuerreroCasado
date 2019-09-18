@@ -1,48 +1,46 @@
 #contact-container {
-    margin-bottom: 4vh;
-}
+    margin-bottom: 8vh;
+    margin: 0 7vw 8vh 7vw;
 
-.trennungsbalken {
-    display: flex;
-    height: 0.2rem;
-    margin: 0 8vw;
-    justify-content: space-between;
-    // padding: 0 7vw;
-
-    .or,
-    .ol {
-        // background: url(../../images/contact.JPG);
-        // opacity: 0.7;
-        background-color: lighten($darkgrey, 35%);
-        width: 2vw;
+    @media #{$small} {
+        margin: 0 3vw 8vh 3vw;
     }
 
+    @media #{$small} {
+        margin: 0 0 4vh 0;
+    }
 }
+
+// .trennungsbalken {
+//     display: flex;
+//     height: 0.1rem;
+//     margin: 0 12vw;
+//     justify-content: space-between;
+//     // padding: 0 7vw;
+
+// .or,
+// .ol {
+//     // background: url(../../images/contact.JPG);
+//     // opacity: 0.7;
+//     // background-color: lighten($darkgrey, 35%);
+//     // width: 2vw;
+//     // }
+
+// }
+
 
 #contact {
     display: grid;
     grid-template-columns: 0.2rem 1fr 0.2rem;
-    padding: 0 7vw;
+
+    // padding: 0 7vw;
     grid-gap: 4vw;
     align-items: center;
 
-    // border-top: 0.2rem solid $lightgrey;
-    // background-color: $lightgrey;
-    // background-image: url(../../images/contact.0JPG);
-    // background-size: cover;
 
-
-    // .cd-side-left,
-    // .cd-side-right {
-    //     // justify-content: center;
-    //     height: 1vw;
-    //     background-color: lighten($darkgrey, 35%);
-    //     // opacity: 0.7;
+    // .cd-side-middle {
+    //     padding-bottom: 2vw;
     // }
-
-    .cd-side-middle {
-        padding-bottom: 2vw;
-    }
 
     .contact-heading {
         margin-bottom: 2.5rem;
@@ -76,7 +74,8 @@
         grid-template-columns: 60% 1fr;
         grid-gap: 3rem;
         justify-content: center;
-        padding-bottom: 4vw;
+        padding-left: 3vw;
+        border-left: 0.2rem solid lighten($darkgrey, 30%);
 
         @media #{$middle} {
             grid-gap: 1.5rem;
@@ -92,13 +91,26 @@
             font-size: 1.1rem;
             color: lighten($darkgrey, 30%);
 
+            @media #{$middle} {
+                font-size: 0.9em;
+            }
+
             @media #{$small} {
-                font-size: 0.8rem;
+                font-size: 0.7rem;
             }
         }
 
         p {
             font-size: 1rem;
+
+            @media #{$tall} {
+                font-size: 0.93rem;
+            }
+
+            @media #{$middle} {
+                font-size: 0.8rem;
+                // color: green;
+            }
 
             @media #{$small} {
                 font-size: 0.7rem;
