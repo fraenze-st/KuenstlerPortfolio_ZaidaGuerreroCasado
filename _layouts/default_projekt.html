@@ -1,0 +1,30 @@
+{% include head.html %}
+<!-- abweichende css von index-head einfuegen -->
+<link rel="stylesheet" href="../assets/scss/style_project.css">
+
+<body>
+    <main>
+        <div id="projectPage">
+
+            {% include navbar.html %}
+
+            {% include navbar_projekte.html %}
+        </div>
+        {{content}}
+        {% include contact.html %}
+    </main>
+
+    <!-- The Modal Enlarge Image on Click-->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="../assets/JavaScript/appIndexPage.js"></script>
+</body>
+
+</html>
