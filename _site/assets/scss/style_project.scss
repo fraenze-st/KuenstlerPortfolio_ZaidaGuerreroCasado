@@ -1,0 +1,224 @@
+//import Variables
+@import "imports/variables";
+
+// import Img Enlarger Modal
+@import "imports/modal_enlargeImg";
+
+
+// import navbar of project page
+@import "imports/navbar";
+
+//import mediaqueries of navbar
+// @import "imports/mediaqueries_navbar";
+
+//import contact
+@import "imports/contact";
+
+@mixin sub-heading {
+    display: flex;
+
+    h2 {
+        margin: 0rem auto;
+        margin-top: 1.5rem;
+        letter-spacing: 0.3rem;
+        font-size: 2.1rem;
+
+        @media #{$tall} {
+            font-size: 1.7rem;
+            // color: green;
+        }
+
+        @media #{$middle} {
+            font-size: 1.4rem;
+            // color: green;
+        }
+
+        @media #{$small} {
+            font-size: 1.2rem;
+            // color: green;
+        }
+    }
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0em;
+    margin: 0em;
+    font-family: "Source Sans Pro", sans-serif;
+    color: $darkgrey;
+    line-height: 1.7em;
+
+    &::before,
+    &::after {
+        box-sizing: inherit;
+    }
+}
+
+
+html {
+    height: 100vh;
+    position: relative;
+    scroll-behavior: smooth;
+    font-size: 17px;
+    /* overflow-y: scroll; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    text-transform: capitalize;
+}
+
+h4 {
+    font-size: 1.1rem;
+
+    @media #{$small} {
+        font-size: 0.8rem;
+    }
+}
+
+p {
+    @media #{$middle} {
+        font-size: 0.8rem;
+    }
+
+    @media #{$small} {
+        font-size: 0.7rem;
+    }
+}
+
+body {
+    background-color: $background;
+
+    &::-webkit-scrollbar-track {
+        background-color: rgba($lightgrey, 0.3);
+    }
+
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(119, 174, 182, 0.7);
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: rgba(89, 128, 134, 0.7);
+    }
+
+}
+
+
+.navbar-container {
+    .navbar-home {
+
+        a {
+            // padding: 0 0.5rem;
+            border-left: 0.2rem solid darken($lightgrey, 10%);
+
+            color: lighten($darkgrey, 15%);
+
+            &:hover {
+                background-color: rgba($lightgrey, 0.9);
+            }
+        }
+    }
+
+    // .navbar-links {
+    //     border-top: 0.08rem solid lighten($darkgrey, 50%);
+    // }
+
+    .nb-right {
+        letter-spacing: 0.3rem;
+
+        // margin-left: 3vw;
+        a {
+            color: lighten($darkgrey, 30%);
+
+            &:hover {
+                background-color: rgba($lightgrey, 0.9);
+            }
+        }
+    }
+}
+
+
+// projects
+
+.main-container {
+    background-color: $background;
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    grid-gap: 2vw;
+    padding: 2vw 5vw;
+
+    @media #{$small} {
+        grid-template-columns: 1fr;
+        padding: 5vw 5vw;
+    }
+
+
+    .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2vw;
+
+        @media #{$middle} {
+            grid-template-columns: 1fr
+        }
+
+        @media #{$small} {
+            grid-template-columns: 1fr
+        }
+
+        // padding: 0 4vw;
+        // align-items: center;
+        // justify-items: center;
+
+        .project-image {
+            margin-bottom: 2vw;
+            transition: 0.1s ease-in;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+
+    }
+
+    .project-description {
+        h4 {
+            font-size: 1.1rem;
+
+            @media #{$middle} {
+                font-size: 0.95rem;
+            }
+
+            @media #{$small} {
+                font-size: 0.8rem;
+            }
+        }
+
+
+
+        //stellt die Projekt-beschreibung ueber die Bilder
+        @media #{$small} {
+            grid-row-start: 1;
+        }
+    }
+
+}
+
+
+
+
+
+// https: //www.hongkiat.com/blog/css-image-zoom-onclick/
+// https: //www.inserthtml.com/2012/04/css-image-gallery/
+// https: //codepen.io/ongtiffany/pen/BoOeQV
+// https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img
