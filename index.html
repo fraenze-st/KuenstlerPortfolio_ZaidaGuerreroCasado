@@ -17,61 +17,19 @@ layout: default
         </div>
 
         <div id="project-teaser">
-
+            {% for post in site.posts %}
             <div class="pt-project project-1">
                 <div>
-                    <a href="project.html"><img class="image" src="../assets/images/project1.jpg" alt=""></a>
+
+                    <a href="{{ post.url }}"><img class="image" src="{{ post.image-small }}" alt=""></a>
                 </div>
                 <div class="project-description">
-                    <h4>Klasse für Installation und Raum</h4>
-                    <p>Leipzig, HGB, August 2019</p>
+                    <h4>{{ post.title }}</h4>
+                    <p>{{ post.place }}, {{ post.year }}</p>
+
                 </div>
             </div>
-            <div class="pt-project project-2">
-                <div>
-                    <img class="image" src="../assets/images/project2.jpg" alt="">
-                </div>
-                <div class="project-description">
-                    <h4>Klasse für Installation und Raum</h4>
-                    <p>Leipzig, HGB, August 2019</p>
-                </div>
-            </div>
-            <div class="pt-project project-3">
-                <div>
-                    <img class="image" src="../assets/images/project3.jpg" alt="">
-                </div>
-                <div class="project-description">
-                    <h4>Klasse für Installation und Raum</h4>
-                    <p>Leipzig, HGB, August 2019</p>
-                </div>
-            </div>
-            <div class="pt-project project-4">
-                <div>
-                    <img class="image" src="../assets/images/project4.jpg" alt="">
-                </div>
-                <div class="project-description">
-                    <h4>Klasse für Installation und Raum</h4>
-                    <p>Leipzig, HGB, August 2019</p>
-                </div>
-            </div>
-            <div class="pt-project project-5">
-                <div>
-                    <img class="image" src="../assets/images/project5.jpg" alt="">
-                </div>
-                <div class="project-description">
-                    <h4>Klasse für Installation und Raum</h4>
-                    <p>Leipzig, HGB, August 2019</p>
-                </div>
-            </div>
-            <div class="pt-project project-6">
-                <div>
-                    <img class="image" src="../assets/images/project6.jpg" alt="">
-                </div>
-                <div class="project-description">
-                    <h4>Klasse für Installation und Raum</h4>
-                    <p>Leipzig, HGB, August 2019</p>
-                </div>
-            </div>
+            {% endfor %}
         </div>
 
     </div>

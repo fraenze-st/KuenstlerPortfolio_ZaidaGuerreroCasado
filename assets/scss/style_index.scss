@@ -171,7 +171,8 @@ body {
 
     &::after {
         content: "";
-        background: url(../assets/images/DSC_0061_2a.JPG);
+        // background: url(../assets/images/DSC_0061_2a.JPG);
+        background: url(../images/DSC_0061_2a.JPG);
         background-size: cover;
         background-attachment: absolute;
         opacity: 0.9;
@@ -273,6 +274,7 @@ body {
 
         .project-description {
             text-align: center;
+            word-spacing: 0.1rem;
         }
     }
 }

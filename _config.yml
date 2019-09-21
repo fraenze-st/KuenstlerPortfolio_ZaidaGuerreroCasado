@@ -25,6 +25,10 @@ github_username: fraenze-st
 # Build settings
 markdown: kramdown
 
+collections:
+  posts:
+    permalink: /:title/
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

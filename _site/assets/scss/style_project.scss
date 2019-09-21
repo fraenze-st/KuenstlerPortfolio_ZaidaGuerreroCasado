@@ -194,6 +194,7 @@ body {
     .project-description {
         h4 {
             font-size: 1.1rem;
+            word-spacing: 0.1rem;
 
             @media #{$middle} {
                 font-size: 0.95rem;

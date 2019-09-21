@@ -604,6 +604,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 #projects-container #project-teaser .project-description {
   text-align: center;
+  word-spacing: 0.1rem;
 }
 
 #cv-container {
