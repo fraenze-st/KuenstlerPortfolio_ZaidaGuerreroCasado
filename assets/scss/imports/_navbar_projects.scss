@@ -9,51 +9,6 @@
 }
 
 
-// .navbar-container {
-//     @include PaddingContainer();
-//     // background-color: rgba($darkgrey, 0.1);
-//     // position: fixed;
-
-//     .navbar {
-//         display: flex;
-//         flex-direction: row;
-//         list-style: none;
-//         justify-content: flex-start;
-//         font-size: 1.4rem;
-
-//         #nb-home {
-//             flex: 1;
-
-//             a {
-//                 padding: 0 0.5rem;
-//                 border-left: 0.2rem solid darken($lightgrey, 10%);
-//             }
-
-//             // https: //www.freecodecamp.org/news/how-to-create-a-fully-responsive-navbar-with-flexbox-a4435d175dd3/
-//         }
-
-//         .nb-item {
-//             // margin-left: 2rem;
-//             padding: 0.3rem 0;
-//             font-weight: 400;
-//             letter-spacing: 0.3rem;
-
-//             // margin-left: 3vw;
-//             a {
-//                 text-decoration: none;
-//                 color: lighten($darkgrey, 10%);
-
-//                 &:hover {
-//                     border-bottom: 0.12rem solid lighten($darkgrey, 50%);
-//                 }
-//             }
-//         }
-
-//         .nb-right {
-//             margin-left: 3vw
-//         }
-//     }
-// }
 
 .navbar-projects-wrapper {
     @include PaddingContainer();
@@ -91,11 +46,11 @@
                 }
             }
 
-            .active {
-                color: lighten($darkgrey, 10%);
-                font-size: 1.15rem;
-                background: rgba($lightgrey, 0.5);
-            }
+            // .active {
+            //     color: lighten($darkgrey, 10%);
+            //     font-size: 1.15rem;
+            //     background: rgba($lightgrey, 0.5);
+            // }
         }
 
 
