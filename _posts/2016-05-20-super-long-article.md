@@ -4,14 +4,16 @@ title: "Master Ausstellung"
 year: "2019"
 # permalink: /Master-Ausstellung/
 image-small: ../assets/images/project6.jpg
-images-left:
-  - image_path: ../assets/images/project6.jpg
-    title: Apple Pie
-  - image_path: ../assets/images/project1.jpg
-    title: Birthday Cake
-images-right:
-  - image_path: ../assets/images/project2.jpg
-    title: Apple Pie
+image-middle: ../assets/images/project5.jpg
+
+# images-left:
+#   - image_path: ../assets/images/project6.jpg
+#     title: Apple Pie
+#   - image_path: ../assets/images/project1.jpg
+#     title: Birthday Cake
+# images-right:
+#   - image_path: ../assets/images/project2.jpg
+#     title: Apple Pie
 
 ---
 
