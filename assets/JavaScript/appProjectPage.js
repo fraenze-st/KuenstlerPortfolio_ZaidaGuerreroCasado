@@ -1,15 +1,15 @@
 // $(document).ready(function () {
 // navbar active-class
-var navProjects = document.querySelectorAll(".nbpp-link");
-// Loop through the links and add the active class to the current/clicked link
-for (var i = 0; i < navProjects.length; i++) {
-    navProjects[i].addEventListener("click", function () {
-        console.log("clicked");
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-    });
-}
+// var navProjects = document.querySelectorAll(".nbpp-link");
+// // Loop through the links and add the active class to the current/clicked link
+// for (var i = 0; i < navProjects.length; i++) {
+//     navProjects[i].addEventListener("click", function () {
+//         console.log("clicked");
+//         var current = document.getElementsByClassName("active");
+//         current[0].className = current[0].className.replace(" active", "");
+//         this.className += " active";
+//     });
+// }
 
 
 

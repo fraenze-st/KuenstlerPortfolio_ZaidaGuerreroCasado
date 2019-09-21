@@ -1,20 +1,8 @@
 <nav class="navbar-projects-wrapper">
-    <h4>Ausstellungen und Projekte</h4>
-    <ul class="nb-projects">
-        <li class="nb-p-project"><a class="nbpp-link active" href="#projects-container">Ausstellung HGB
-                2018</a></li>
-        <li class="nb-p-project"><a class="nbpp-link" href="#projects-container">Diplomabschluss
-                2016</a>
-        </li>
-        <li class="nb-p-project"><a class="nbpp-link" href="#projects-container">HongKong 2015</a></li>
-        <li class="nb-p-project"><a class="nbpp-link" href="#projects-container">Marokko 2017</a></li>
-        <li class="nb-p-project"><a class="nbpp-link" href="#projects-container">Spanien, Dali, 2010</a>
-        </li>
-        <li class="nb-p-project"><a class="nbpp-link" href="#projects-container">PögeHaus, Grenzen,
-                2012</a>
-        </li>
-        <li class="nb-p-project"><a class="nbpp-link" href="#projects-container">Ausstellung HGB
-                2019</a>
-        </li>
-    </ul>
+        <h4>Ausstellungen und Projekte</h4>
+        <ul class="nb-projects">
+                {% for post in site.posts %}
+                <li class="nb-p-project"><a class="nbpp-link active" href="{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}
+        </ul>
 </nav>
