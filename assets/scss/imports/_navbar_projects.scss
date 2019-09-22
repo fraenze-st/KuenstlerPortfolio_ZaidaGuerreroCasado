@@ -46,11 +46,11 @@
                 }
             }
 
-            // .active {
-            //     color: lighten($darkgrey, 10%);
-            //     font-size: 1.15rem;
-            //     background: rgba($lightgrey, 0.5);
-            // }
+            .active {
+                color: lighten($darkgrey, 10%);
+                font-size: 1.15rem;
+                background: rgba($lightgrey, 0.5);
+            }
         }
     }
 }
