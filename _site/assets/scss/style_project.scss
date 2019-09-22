@@ -86,7 +86,7 @@ p {
     }
 
     @media #{$small} {
-        font-size: 0.7rem;
+        font-size: 0.75rem;
     }
 }
 
@@ -154,10 +154,12 @@ body {
     grid-template-columns: 1fr 40%;
     grid-gap: 2vw;
     padding: 2vw 5vw;
+    margin-bottom: 5vh;
 
     @media #{$small} {
         grid-template-columns: 1fr;
         padding: 5vw 5vw;
+        margin-bottom: 3vh;
     }
 
 
@@ -192,6 +194,7 @@ body {
     }
 
     .project-description {
+
         h4 {
             font-size: 1.1rem;
             word-spacing: 0.1rem;

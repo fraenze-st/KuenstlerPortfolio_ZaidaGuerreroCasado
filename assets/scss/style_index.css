@@ -372,7 +372,7 @@ h4 {
 
 @media (max-width: 480px) {
   p {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
   }
 }
 
@@ -525,6 +525,12 @@ body::-webkit-scrollbar-thumb:hover {
   }
 }
 
+@media (max-width: 480px) {
+  #projects-container .pc-heading {
+    margin-bottom: 2rem;
+  }
+}
+
 #projects-container #project-teaser {
   display: -ms-grid;
   display: grid;
@@ -656,6 +662,12 @@ body::-webkit-scrollbar-thumb:hover {
 @media (max-width: 480px) {
   #cv-container .cv-heading h2 {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #cv-container .cv-heading {
+    margin-bottom: 0;
   }
 }
 

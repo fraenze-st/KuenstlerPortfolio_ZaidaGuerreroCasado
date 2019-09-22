@@ -465,7 +465,7 @@ h4 {
 
 @media (max-width: 480px) {
   p {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
   }
 }
 
@@ -518,6 +518,7 @@ body::-webkit-scrollbar-thumb:hover {
       grid-template-columns: 1fr 40%;
   grid-gap: 2vw;
   padding: 2vw 5vw;
+  margin-bottom: 5vh;
 }
 
 @media (max-width: 480px) {
@@ -525,6 +526,7 @@ body::-webkit-scrollbar-thumb:hover {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     padding: 5vw 5vw;
+    margin-bottom: 3vh;
   }
 }
 
