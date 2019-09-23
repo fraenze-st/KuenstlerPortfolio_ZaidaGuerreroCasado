@@ -1,4 +1,5 @@
 /* The Modal (background) */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_modal_enlargeImg\.scss}line{font-family:\000034}}
 .modal {
   display: none;
   /* Hidden by default */
@@ -19,18 +20,18 @@
   background-color: black;
   /* Fallback color */
   background-color: rgba(0, 0, 0, 0.9);
-  /* Black w/ opacity */
-}
+  /* Black w/ opacity */ }
 
 /* Modal Content (image) */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_modal_enlargeImg\.scss}line{font-family:\0000328}}
 .modal-content {
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 700px;
-}
+  max-width: 700px; }
 
 /* Caption of Modal Image */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_modal_enlargeImg\.scss}line{font-family:\0000336}}
 #caption {
   margin: auto;
   display: block;
@@ -39,39 +40,29 @@
   text-align: center;
   color: #ccc;
   padding: 10px 0;
-  height: 150px;
-}
+  height: 150px; }
 
 /* Add Animation */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_modal_enlargeImg\.scss}line{font-family:\0000348}}
 .modal-content,
 #caption {
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
-  animation-duration: 0.6s;
-}
+  animation-duration: 0.6s; }
 
 @-webkit-keyframes zoom {
   from {
-    -webkit-transform: scale(0.8);
-  }
+    -webkit-transform: scale(0.8); }
   to {
-    -webkit-transform: scale(1);
-  }
-}
-
+    -webkit-transform: scale(1); } }
 @keyframes zoom {
   from {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-  }
+    transform: scale(0.8); }
   to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
+    transform: scale(1); } }
 /* The Close Button */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_modal_enlargeImg\.scss}line{font-family:\0000377}}
 .close {
   position: absolute;
   top: 15px;
@@ -79,511 +70,371 @@
   color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
+  transition: 0.3s; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_modal_enlargeImg\.scss}line{font-family:\0000387}}
 .close:hover,
 .close:focus {
   color: #bbb;
   text-decoration: none;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_modal_enlargeImg\.scss}line{font-family:\0000396}}
   .modal-content {
-    width: 100%;
-  }
-}
-
+    width: 100%; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_navbar\.scss}line{font-family:\000037}}
 .navbar-container {
   padding: 0 5vw 0vw 5vw;
   margin-top: 0.8vh;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   list-style: none;
   font-size: 1.4rem;
-  letter-spacing: 0.3rem;
-}
-
-@media (max-width: 860px) {
-  .navbar-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-@media (max-width: 1150px) {
-  .navbar-container a {
-    font-size: 1.3rem;
-  }
-}
-
-@media (max-width: 860px) {
-  .navbar-container a {
-    font-size: 1.1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .navbar-container a {
-    font-size: 0.9rem;
-  }
-}
-
-.navbar-container .navbar-home {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-.navbar-container .navbar-home a {
-  text-decoration: none;
-  color: #4b4b4b;
-  padding: 0.2rem 0.5rem;
-  border-left: 0.2rem solid #7e7e7e;
-}
-
-.navbar-container .navbar-home a:hover {
-  background-color: rgba(49, 49, 49, 0.1);
-}
-
-@media (max-width: 860px) {
-  .navbar-container .navbar-home a {
-    border-bottom: 0.15rem solid #7e7e7e;
-  }
-}
-
-.navbar-container .navbar-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 35%;
-}
-
-@media screen and (max-width: 1024px) {
+  letter-spacing: 0.3rem; }
+  @media (max-width: 860px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_navbar\.scss}line{font-family:\000037}}
+    .navbar-container {
+      flex-direction: column; } }
+  @media (max-width: 1150px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_navbar\.scss}line{font-family:\0000323}}
+    .navbar-container a {
+      font-size: 1.3rem; } }
+  @media (max-width: 860px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_navbar\.scss}line{font-family:\0000323}}
+    .navbar-container a {
+      font-size: 1.1rem; } }
+  @media (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_navbar\.scss}line{font-family:\0000323}}
+    .navbar-container a {
+      font-size: 0.9rem; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_navbar\.scss}line{font-family:\0000337}}
+  .navbar-container .navbar-home {
+    flex: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_navbar\.scss}line{font-family:\0000340}}
+    .navbar-container .navbar-home a {
+      text-decoration: none;
+      color: #4b4b4b;
+      padding: 0.2rem 0.5rem;
+      border-left: 0.2rem solid #7e7e7e; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_navbar\.scss}line{font-family:\0000347}}
+      .navbar-container .navbar-home a:hover {
+        background-color: rgba(49, 49, 49, 0.1); }
+      @media (max-width: 860px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_navbar\.scss}line{font-family:\0000340}}
+        .navbar-container .navbar-home a {
+          border-bottom: 0.15rem solid #7e7e7e; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_navbar\.scss}line{font-family:\0000368}}
   .navbar-container .navbar-links {
-    width: 40%;
-  }
-}
-
-@media (max-width: 860px) {
-  .navbar-container .navbar-links {
-    width: 50%;
-  }
-}
-
-@media (max-width: 860px) {
-  .navbar-container .nb-right {
-    margin: 0 0.5rem 0 0;
-    padding: 0;
-  }
-}
-
-.navbar-container .nb-right a {
-  text-decoration: none;
-  margin-left: 3vw;
-  padding: 0.2rem 0.5rem;
-  color: #4b4b4b;
-}
-
-@media (max-width: 860px) {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 35%; }
+    @media screen and (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_navbar\.scss}line{font-family:\0000368}}
+      .navbar-container .navbar-links {
+        width: 40%; } }
+    @media (max-width: 860px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_navbar\.scss}line{font-family:\0000368}}
+      .navbar-container .navbar-links {
+        width: 50%; } }
+  @media (max-width: 860px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_navbar\.scss}line{font-family:\0000383}}
+    .navbar-container .nb-right {
+      margin: 0 0.5rem 0 0;
+      padding: 0; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_navbar\.scss}line{font-family:\0000389}}
   .navbar-container .nb-right a {
-    margin-left: 0;
-  }
-}
+    text-decoration: none;
+    margin-left: 3vw;
+    padding: 0.2rem 0.5rem;
+    color: #4b4b4b; }
+    @media (max-width: 860px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_navbar\.scss}line{font-family:\0000389}}
+      .navbar-container .nb-right a {
+        margin-left: 0; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_navbar\.scss}line{font-family:\00003100}}
+    .navbar-container .nb-right a:hover {
+      background-color: rgba(49, 49, 49, 0.1); }
 
-.navbar-container .nb-right a:hover {
-  background-color: rgba(49, 49, 49, 0.1);
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_navbar\.scss}line{font-family:\00003128}}
 .navbar-projects-wrapper {
   padding: 0 5vw 0vw 5vw;
-  margin-top: 5vh;
-}
-
-.navbar-projects-wrapper h4 {
-  letter-spacing: 0.3rem;
-  font-size: 1.1rem;
-  text-transform: none;
-  color: #4b4b4b;
-}
-
-@media (max-width: 860px) {
+  margin-top: 5vh; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_navbar\.scss}line{font-family:\00003136}}
   .navbar-projects-wrapper h4 {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .navbar-projects-wrapper h4 {
-    font-size: 0.8rem;
-  }
-}
-
-.navbar-projects-wrapper .nb-projects {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  list-style: none;
-  margin-top: 0.5rem;
-}
-
-@media (max-width: 480px) {
+    letter-spacing: 0.3rem;
+    font-size: 1.1rem;
+    text-transform: none;
+    color: #4b4b4b; }
+    @media (max-width: 860px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_navbar\.scss}line{font-family:\00003136}}
+      .navbar-projects-wrapper h4 {
+        font-size: 0.9rem; } }
+    @media (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_navbar\.scss}line{font-family:\00003136}}
+      .navbar-projects-wrapper h4 {
+        font-size: 0.8rem; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_navbar\.scss}line{font-family:\00003152}}
   .navbar-projects-wrapper .nb-projects {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 0.5rem; }
+    @media (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_navbar\.scss}line{font-family:\00003152}}
+      .navbar-projects-wrapper .nb-projects {
+        flex-direction: column; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_navbar\.scss}line{font-family:\00003165}}
+    .navbar-projects-wrapper .nb-projects .nb-p-project {
+      margin-right: 0.6rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_navbar\.scss}line{font-family:\00003168}}
+      .navbar-projects-wrapper .nb-projects .nb-p-project .nbpp-link {
+        color: #909090;
+        text-decoration: none;
+        font-size: 1rem;
+        letter-spacing: 0.07rem;
+        padding: 0.3rem 0.4rem;
+        text-transform: uppercase; }
+        @media (max-width: 860px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_navbar\.scss}line{font-family:\00003168}}
+          .navbar-projects-wrapper .nb-projects .nb-p-project .nbpp-link {
+            font-size: 0.8rem; } }
+        @media (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_navbar\.scss}line{font-family:\00003168}}
+          .navbar-projects-wrapper .nb-projects .nb-p-project .nbpp-link {
+            font-size: 0.6rem; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_navbar\.scss}line{font-family:\00003188}}
+        .navbar-projects-wrapper .nb-projects .nb-p-project .nbpp-link:hover {
+          color: #6a6a6a; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_navbar\.scss}line{font-family:\00003193}}
+      .navbar-projects-wrapper .nb-projects .nb-p-project .active {
+        color: #4b4b4b;
+        font-size: 1.05rem;
+        background: rgba(233, 233, 233, 0.5); }
+        @media (max-width: 860px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_navbar\.scss}line{font-family:\00003193}}
+          .navbar-projects-wrapper .nb-projects .nb-p-project .active {
+            font-size: 0.85rem; } }
+        @media (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_navbar\.scss}line{font-family:\00003193}}
+          .navbar-projects-wrapper .nb-projects .nb-p-project .active {
+            font-size: 0.65rem; } }
 
-.navbar-projects-wrapper .nb-projects .nb-p-project {
-  margin-right: 0.6rem;
-}
-
-.navbar-projects-wrapper .nb-projects .nb-p-project .nbpp-link {
-  color: #909090;
-  text-decoration: none;
-  font-size: 1rem;
-  letter-spacing: 0.07rem;
-  padding: 0.3rem 0.4rem;
-  text-transform: uppercase;
-}
-
-@media (max-width: 860px) {
-  .navbar-projects-wrapper .nb-projects .nb-p-project .nbpp-link {
-    font-size: 0.8rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .navbar-projects-wrapper .nb-projects .nb-p-project .nbpp-link {
-    font-size: 0.6rem;
-  }
-}
-
-.navbar-projects-wrapper .nb-projects .nb-p-project .nbpp-link:hover {
-  color: #6a6a6a;
-}
-
-.navbar-projects-wrapper .nb-projects .nb-p-project .active {
-  color: #4b4b4b;
-  font-size: 1.05rem;
-  background: rgba(233, 233, 233, 0.5);
-}
-
-@media (max-width: 860px) {
-  .navbar-projects-wrapper .nb-projects .nb-p-project .active {
-    font-size: 0.85rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .navbar-projects-wrapper .nb-projects .nb-p-project .active {
-    font-size: 0.65rem;
-  }
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_contact\.scss}line{font-family:\000031}}
 #contact-container {
   margin-bottom: 8vh;
-  margin: 0 7vw 8vh 7vw;
-}
+  margin: 0 7vw 8vh 7vw; }
+  @media (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_contact\.scss}line{font-family:\000031}}
+    #contact-container {
+      margin: 0 3vw 8vh 3vw; } }
+  @media (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_contact\.scss}line{font-family:\000031}}
+    #contact-container {
+      margin: 0 0 4vh 0; } }
 
-@media (max-width: 480px) {
-  #contact-container {
-    margin: 0 3vw 8vh 3vw;
-  }
-}
-
-@media (max-width: 480px) {
-  #contact-container {
-    margin: 0 0 4vh 0;
-  }
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_contact\.scss}line{font-family:\0000332}}
 #contact {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 0.2rem 1fr 0.2rem;
-      grid-template-columns: 0.2rem 1fr 0.2rem;
+  grid-template-columns: 0.2rem 1fr 0.2rem;
   grid-gap: 4vw;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#contact .contact-heading {
-  margin-bottom: 2.5rem;
-  letter-spacing: 0.3rem;
-  text-align: center;
-}
-
-#contact .contact-heading h2 {
-  font-size: 2.1rem;
-}
-
-@media (max-width: 1150px) {
-  #contact .contact-heading h2 {
-    font-size: 1.7rem;
-  }
-}
-
-@media (max-width: 860px) {
-  #contact .contact-heading h2 {
-    font-size: 1.4rem;
-  }
-}
-
-@media (max-width: 480px) {
-  #contact .contact-heading h2 {
-    font-size: 1.2rem;
-  }
-}
-
-#contact .contact-details {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 60% 1fr;
-      grid-template-columns: 60% 1fr;
-  grid-gap: 3rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-left: 3vw;
-  border-left: 0.2rem solid #7e7e7e;
-}
-
-@media (max-width: 860px) {
+  align-items: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_contact\.scss}line{font-family:\0000345}}
+  #contact .contact-heading {
+    margin-bottom: 2.5rem;
+    letter-spacing: 0.3rem;
+    text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_contact\.scss}line{font-family:\0000350}}
+    #contact .contact-heading h2 {
+      font-size: 2.1rem; }
+      @media (max-width: 1150px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_contact\.scss}line{font-family:\0000350}}
+        #contact .contact-heading h2 {
+          font-size: 1.7rem; } }
+      @media (max-width: 860px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_contact\.scss}line{font-family:\0000350}}
+        #contact .contact-heading h2 {
+          font-size: 1.4rem; } }
+      @media (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_contact\.scss}line{font-family:\0000350}}
+        #contact .contact-heading h2 {
+          font-size: 1.2rem; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_contact\.scss}line{font-family:\0000372}}
   #contact .contact-details {
-    grid-gap: 1.5rem;
-  }
-}
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    grid-gap: 3rem;
+    justify-content: center;
+    padding-left: 3vw;
+    border-left: 0.2rem solid #7e7e7e; }
+    @media (max-width: 860px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_contact\.scss}line{font-family:\0000372}}
+      #contact .contact-details {
+        grid-gap: 1.5rem; } }
+    @media (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_contact\.scss}line{font-family:\0000372}}
+      #contact .contact-details {
+        grid-gap: 0.8rem; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_contact\.scss}line{font-family:\0000390}}
+    #contact .contact-details h4 {
+      font-size: 1.1rem;
+      color: #7e7e7e; }
+      @media (max-width: 860px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_contact\.scss}line{font-family:\0000390}}
+        #contact .contact-details h4 {
+          font-size: 0.9em; } }
+      @media (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_contact\.scss}line{font-family:\0000390}}
+        #contact .contact-details h4 {
+          font-size: 0.7rem; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_contact\.scss}line{font-family:\00003103}}
+    #contact .contact-details p {
+      font-size: 1rem; }
+      @media (max-width: 1150px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_contact\.scss}line{font-family:\00003103}}
+        #contact .contact-details p {
+          font-size: 0.93rem; } }
+      @media (max-width: 860px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_contact\.scss}line{font-family:\00003103}}
+        #contact .contact-details p {
+          font-size: 0.8rem; } }
+      @media (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/imports\/_contact\.scss}line{font-family:\00003103}}
+        #contact .contact-details p {
+          font-size: 0.7rem; } }
 
-@media (max-width: 480px) {
-  #contact .contact-details {
-    grid-gap: 0.8rem;
-  }
-}
-
-#contact .contact-details h4 {
-  font-size: 1.1rem;
-  color: #7e7e7e;
-}
-
-@media (max-width: 860px) {
-  #contact .contact-details h4 {
-    font-size: 0.9em;
-  }
-}
-
-@media (max-width: 480px) {
-  #contact .contact-details h4 {
-    font-size: 0.7rem;
-  }
-}
-
-#contact .contact-details p {
-  font-size: 1rem;
-}
-
-@media (max-width: 1150px) {
-  #contact .contact-details p {
-    font-size: 0.93rem;
-  }
-}
-
-@media (max-width: 860px) {
-  #contact .contact-details p {
-    font-size: 0.8rem;
-  }
-}
-
-@media (max-width: 480px) {
-  #contact .contact-details p {
-    font-size: 0.7rem;
-  }
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/style_project\.scss}line{font-family:\0000344}}
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0em;
   margin: 0em;
   font-family: "Source Sans Pro", sans-serif;
   color: #313131;
-  line-height: 1.7em;
-}
+  line-height: 1.7em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/style_project\.scss}line{font-family:\0000352}}
+  *::before, *::after {
+    box-sizing: inherit; }
 
-*::before, *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/style_project\.scss}line{font-family:\0000359}}
 html {
   height: 100vh;
   position: relative;
   scroll-behavior: smooth;
   font-size: 17px;
-  /* overflow-y: scroll; */
-}
+  /* overflow-y: scroll; */ }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/style_project\.scss}line{font-family:\0000367}}
 h1,
 h2,
 h3,
 h4,
 h5 {
-  text-transform: capitalize;
-}
+  text-transform: capitalize; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/style_project\.scss}line{font-family:\0000375}}
 h4 {
-  font-size: 1.1rem;
-}
-
-@media (max-width: 480px) {
-  h4 {
-    font-size: 0.8rem;
-  }
-}
+  font-size: 1.1rem; }
+  @media (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/style_project\.scss}line{font-family:\0000375}}
+    h4 {
+      font-size: 0.8rem; } }
 
 @media (max-width: 860px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/style_project\.scss}line{font-family:\0000383}}
   p {
-    font-size: 0.8rem;
-  }
-}
-
+    font-size: 0.8rem; } }
 @media (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/style_project\.scss}line{font-family:\0000383}}
   p {
-    font-size: 0.75rem;
-  }
-}
+    font-size: 0.75rem; } }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/style_project\.scss}line{font-family:\0000393}}
 body {
-  background-color: #fbfbfb;
-}
+  background-color: #fbfbfb; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/style_project\.scss}line{font-family:\0000396}}
+  body::-webkit-scrollbar-track {
+    background-color: rgba(233, 233, 233, 0.3); }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/style_project\.scss}line{font-family:\00003100}}
+  body::-webkit-scrollbar {
+    width: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/style_project\.scss}line{font-family:\00003104}}
+  body::-webkit-scrollbar-thumb {
+    background-color: rgba(119, 174, 182, 0.7); }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/style_project\.scss}line{font-family:\00003108}}
+  body::-webkit-scrollbar-thumb:hover {
+    background: rgba(89, 128, 134, 0.7); }
 
-body::-webkit-scrollbar-track {
-  background-color: rgba(233, 233, 233, 0.3);
-}
-
-body::-webkit-scrollbar {
-  width: 10px;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: rgba(119, 174, 182, 0.7);
-}
-
-body::-webkit-scrollbar-thumb:hover {
-  background: rgba(89, 128, 134, 0.7);
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/style_project\.scss}line{font-family:\00003118}}
 .navbar-container .navbar-home a {
   border-left: 0.2rem solid #d0d0d0;
-  color: #575757;
-}
-
-.navbar-container .navbar-home a:hover {
-  background-color: rgba(233, 233, 233, 0.9);
-}
-
+  color: #575757; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/style_project\.scss}line{font-family:\00003124}}
+  .navbar-container .navbar-home a:hover {
+    background-color: rgba(233, 233, 233, 0.9); }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/style_project\.scss}line{font-family:\00003134}}
 .navbar-container .nb-right {
-  letter-spacing: 0.3rem;
-}
+  letter-spacing: 0.3rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/style_project\.scss}line{font-family:\00003138}}
+  .navbar-container .nb-right a {
+    color: #7e7e7e; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/style_project\.scss}line{font-family:\00003141}}
+    .navbar-container .nb-right a:hover {
+      background-color: rgba(233, 233, 233, 0.9); }
 
-.navbar-container .nb-right a {
-  color: #7e7e7e;
-}
-
-.navbar-container .nb-right a:hover {
-  background-color: rgba(233, 233, 233, 0.9);
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/style_project\.scss}line{font-family:\00003151}}
 .main-container {
   background-color: #fbfbfb;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 40%;
-      grid-template-columns: 1fr 40%;
+  grid-template-columns: 1fr 40%;
   grid-gap: 2vw;
-  padding: 2vw 5vw;
-  margin-bottom: 5vh;
-}
-
-@media (max-width: 480px) {
-  .main-container {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    padding: 5vw 5vw;
-    margin-bottom: 3vh;
-  }
-}
-
-.main-container .row {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  grid-gap: 2vw;
-}
-
-@media (max-width: 860px) {
+  padding: 4vw 5vw;
+  margin-bottom: 5vh; }
+  @media (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/style_project\.scss}line{font-family:\00003151}}
+    .main-container {
+      grid-template-columns: 1fr;
+      padding: 5vw 5vw;
+      margin-bottom: 3vh; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/style_project\.scss}line{font-family:\00003172}}
   .main-container .row {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 480px) {
-  .main-container .row {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
-
-.main-container .row .project-image {
-  margin-bottom: 2vw;
-  -webkit-transition: 0.1s ease-in;
-  transition: 0.1s ease-in;
-  cursor: pointer;
-}
-
-.main-container .row .project-image:hover {
-  opacity: 0.8;
-}
-
-.main-container .project-description h4 {
-  font-size: 1.1rem;
-  word-spacing: 0.1rem;
-}
-
-@media (max-width: 860px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw; }
+    @media (max-width: 860px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/style_project\.scss}line{font-family:\00003172}}
+      .main-container .row {
+        grid-template-columns: 1fr; } }
+    @media (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/style_project\.scss}line{font-family:\00003172}}
+      .main-container .row {
+        grid-template-columns: 1fr; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/style_project\.scss}line{font-family:\00003189}}
+    .main-container .row .project-image {
+      margin-bottom: 2vw;
+      transition: 0.1s ease-in;
+      cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/style_project\.scss}line{font-family:\00003194}}
+      .main-container .row .project-image:hover {
+        opacity: 0.8; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/style_project\.scss}line{font-family:\00003203}}
   .main-container .project-description h4 {
-    font-size: 0.95rem;
-  }
-}
+    font-size: 1.1rem;
+    word-spacing: 0.1rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.5vh; }
+    @media (max-width: 860px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/style_project\.scss}line{font-family:\00003203}}
+      .main-container .project-description h4 {
+        font-size: 0.95rem; } }
+    @media (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/style_project\.scss}line{font-family:\00003203}}
+      .main-container .project-description h4 {
+        font-size: 0.8rem; } }
+  @media (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Programmierung\/Desktop\/Github_Repositories\/ArtistPortfolio_ZaidaGuerreroCasado\/assets\/scss\/style_project\.scss}line{font-family:\00003200}}
+    .main-container .project-description {
+      grid-row-start: 1; } }
 
-@media (max-width: 480px) {
-  .main-container .project-description h4 {
-    font-size: 0.8rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .main-container .project-description {
-    -ms-grid-row: 1;
-        grid-row-start: 1;
-  }
-}
 /*# sourceMappingURL=style_project.css.map */

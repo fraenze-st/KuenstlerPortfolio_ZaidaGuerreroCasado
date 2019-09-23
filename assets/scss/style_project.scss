@@ -1,18 +1,18 @@
 //import Variables
-@import "imports/variables";
+@import "../scss/imports/variables";
 
 // import Img Enlarger Modal
-@import "imports/modal_enlargeImg";
+@import "../scss/imports/modal_enlargeImg";
 
 
-// import navbar of project page
-@import "imports/navbar";
+// import navbar
+@import "../scss/imports/navbar";
 
-//import mediaqueries of navbar
-// @import "imports/mediaqueries_navbar";
 
 //import contact
-@import "imports/contact";
+@import "../scss/imports/contact";
+
+
 
 @mixin sub-heading {
     display: flex;
@@ -153,14 +153,20 @@ body {
     display: grid;
     grid-template-columns: 1fr 40%;
     grid-gap: 2vw;
-    padding: 2vw 5vw;
+    padding: 4vw 5vw;
     margin-bottom: 5vh;
+
+
 
     @media #{$small} {
         grid-template-columns: 1fr;
         padding: 5vw 5vw;
         margin-bottom: 3vh;
     }
+
+    // .image-big {
+    //     // margin-top: 2rem;
+    // }
 
 
     .row {
@@ -189,15 +195,16 @@ body {
                 opacity: 0.8;
             }
         }
-
-
     }
 
     .project-description {
+        // padding-top: 1.7rem;
 
         h4 {
             font-size: 1.1rem;
             word-spacing: 0.1rem;
+            letter-spacing: 0.1rem;
+            margin-bottom: 0.5vh;
 
             @media #{$middle} {
                 font-size: 0.95rem;
