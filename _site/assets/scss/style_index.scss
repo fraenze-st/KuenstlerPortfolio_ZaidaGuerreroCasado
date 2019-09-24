@@ -1,14 +1,18 @@
 // //import color Variables
 // @import "imports/variables";
 
+// @import "imports/mixin";
+
 // import allg CSS seiten-style
 // @import "imports/html.scss";
 
 // import navbar
 // @import "imports/navbar";
-// @import "imports/mediaqueries_navbar";
+
 
 // @import "imports/contact";
+
+// @import "imports/modal_enlargeImg";
 
 $light: rgb(250, 250, 250);
 $background: rgb(251, 251, 251);
@@ -181,14 +185,6 @@ body {
         }
     }
 
-    // .navbar-burger {
-    //     visibility: hidden;
-
-    //     @media #{$middle} {
-    //         visibility: visible;
-
-    //     }
-    // }
 
     .navbar-links {
         display: flex;
@@ -230,24 +226,6 @@ body {
 
     }
 }
-
-// .navbar-burger {
-//     display: none;
-//     cursor: pointer;
-//     // height: 0.8rem;
-
-//     .fa-bars {
-//         color: lighten($darkgrey, 20%);
-//         font-size: 0.9rem;
-//     }
-
-//     @media #{$small} {
-//         display: block;
-
-//     }
-// }
-
-
 
 
 
@@ -324,9 +302,6 @@ body {
         /* https://css-tricks.com/snippets/css/transparent-background-images/ */
     }
 }
-
-//different navbar styling thatn project page
-
 
 
 
@@ -419,23 +394,29 @@ body {
 }
 
 
+
+// CV Container
+
+
 #cv-container {
     display: flex;
     flex-direction: column;
-    padding: 2vw 20vw 5vw 20vw;
+    margin: 7vw 15vw 5vw 15vw;
     justify-content: center;
 
     @media #{$small} {
-        padding: 10vw 5vw 10vw 5vw;
+        margin: 10vw 13vw 10vw 13vw;
     }
 
     .cv-heading {
         @include sub-heading();
         margin-bottom: 1rem;
 
+
         @media #{$small} {
             margin-bottom: 0;
         }
+
     }
 
     .cv-years {
@@ -446,7 +427,7 @@ body {
         h4 {
             margin-bottom: 0.4rem;
             margin-top: 1.7rem;
-            // font-size: 2rem;
+
         }
 
         p {
@@ -462,6 +443,9 @@ body {
     }
 }
 
+
+
+// Kontakt
 
 #contact-container {
     margin-bottom: 8vh;
