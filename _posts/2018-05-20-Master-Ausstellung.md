@@ -1,8 +1,9 @@
 ---
 layout: default_projekt
 title: "Master Ausstellung"
-year: "2019"
-# permalink: /Master-Ausstellung/
+year: "2018"
+place: "Haus, Leipzig"
+
 image-small: ../assets/images/project6.jpg
 image-middle: ../assets/images/project5.jpg
 
