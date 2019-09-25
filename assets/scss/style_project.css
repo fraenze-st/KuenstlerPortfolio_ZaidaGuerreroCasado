@@ -300,7 +300,6 @@ body::-webkit-scrollbar-thumb:hover {
       grid-template-columns: 1fr 40%;
   grid-gap: 2vw;
   padding: 4vw 5vw;
-  margin-bottom: 5vh;
 }
 
 @media (max-width: 480px) {
@@ -308,7 +307,6 @@ body::-webkit-scrollbar-thumb:hover {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     padding: 5vw 5vw;
-    margin-bottom: 0;
   }
 }
 

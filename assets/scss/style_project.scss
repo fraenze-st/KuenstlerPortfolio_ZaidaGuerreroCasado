@@ -351,19 +351,11 @@ body {
     grid-template-columns: 1fr 40%;
     grid-gap: 2vw;
     padding: 4vw 5vw;
-    margin-bottom: 5vh;
-
-
 
     @media #{$small} {
         grid-template-columns: 1fr;
         padding: 5vw 5vw;
-        margin-bottom: 0;
     }
-
-    // .image-big {
-    //     // margin-top: 2rem;
-    // }
 
 
     .row {

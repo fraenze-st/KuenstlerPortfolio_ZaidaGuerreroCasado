@@ -11,12 +11,13 @@ images-left:
     title: Apple Pie
   - image_path: ../assets/images/project5.jpg
     title: Birthday Cake
+  - image_path: ../assets/images/project4.jpg
+    title: Birthday Cake
 
 images-right:
   - image_path: ../assets/images/project7.jpg
     title: Apple Pie
-  - image_path: ../assets/images/project4.jpg
-    title: Birthday Cake
+
 
 ---
 
