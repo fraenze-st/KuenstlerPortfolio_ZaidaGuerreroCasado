@@ -18,15 +18,13 @@ layout: default
 
         <div id="project-teaser">
             {% for post in site.posts %}
-            <div class="pt-project project-1">
+            <div class="pt-project">
                 <div>
-
                     <a href="{{ post.url }}"><img class="image" src="{{ post.image-small }}" alt=""></a>
                 </div>
                 <div class="project-description">
                     <h4>{{ post.title }}</h4>
                     <p>{{ post.place }}, {{ post.year }}</p>
-
                 </div>
             </div>
             {% endfor %}

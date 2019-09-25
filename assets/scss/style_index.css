@@ -202,6 +202,12 @@ body::-webkit-scrollbar-thumb:hover {
   margin: 0 5vw;
 }
 
+@media (max-width: 480px) {
+  #heading {
+    margin: 0 3.7vw;
+  }
+}
+
 #heading h1 {
   font-size: 2.4rem;
   margin-top: 25vh;
@@ -224,8 +230,9 @@ body::-webkit-scrollbar-thumb:hover {
 
 @media (max-width: 480px) {
   #heading h1 {
-    font-size: 1.2rem;
-    margin-top: 20vh;
+    font-size: 1.4rem;
+    margin-top: 15vh;
+    margin-bottom: 1rem;
   }
 }
 
@@ -249,6 +256,7 @@ body::-webkit-scrollbar-thumb:hover {
 @media (max-width: 480px) {
   #heading p {
     font-size: 0.8rem;
+    color: #0b0b0b;
   }
 }
 
@@ -393,6 +401,7 @@ body::-webkit-scrollbar-thumb:hover {
   #projects-container #project-teaser .pt-project .image {
     width: 15rem;
     height: 10rem;
+    padding: 0.3rem 0;
     border-top: 0.1rem solid #9d9d9d;
     border-bottom: 0.1rem solid #9d9d9d;
   }
@@ -419,7 +428,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 @media (max-width: 480px) {
   #cv-container {
-    margin: 10vw 13vw 10vw 13vw;
+    margin: 10vw 11vw 10vw 11vw;
   }
 }
 
@@ -478,19 +487,12 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 #contact-container {
-  margin-bottom: 8vh;
-  margin: 0 7vw 8vh 7vw;
+  margin: 0 7vw 4vw 7vw;
 }
 
 @media (max-width: 480px) {
   #contact-container {
-    margin: 0 3vw 8vh 3vw;
-  }
-}
-
-@media (max-width: 480px) {
-  #contact-container {
-    margin: 0 0 4vh 0;
+    margin: 0 0 8vh 0;
   }
 }
 
@@ -555,6 +557,7 @@ body::-webkit-scrollbar-thumb:hover {
 @media (max-width: 480px) {
   #contact .contact-details {
     grid-gap: 0.8rem;
+    border-left: 0.15rem solid #7e7e7e;
   }
 }
 

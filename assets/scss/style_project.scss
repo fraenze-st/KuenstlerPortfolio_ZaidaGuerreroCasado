@@ -177,14 +177,6 @@ body {
         }
     }
 
-    // .navbar-burger {
-    //     visibility: hidden;
-
-    //     @media #{$middle} {
-    //         visibility: visible;
-
-    //     }
-    // }
 
     .navbar-links {
         display: flex;
@@ -227,21 +219,6 @@ body {
     }
 }
 
-// .navbar-burger {
-//     display: none;
-//     cursor: pointer;
-//     // height: 0.8rem;
-
-//     .fa-bars {
-//         color: lighten($darkgrey, 20%);
-//         font-size: 0.9rem;
-//     }
-
-//     @media #{$small} {
-//         display: block;
-
-//     }
-// }
 
 
 // navbar projekte 
@@ -381,7 +358,7 @@ body {
     @media #{$small} {
         grid-template-columns: 1fr;
         padding: 5vw 5vw;
-        margin-bottom: 3vh;
+        margin-bottom: 0;
     }
 
     // .image-big {
@@ -418,7 +395,9 @@ body {
     }
 
     .project-description {
-        // padding-top: 1.7rem;
+        @media #{$small} {
+            padding-bottom: 3vw;
+        }
 
         h4 {
             font-size: 1.1rem;
@@ -432,10 +411,9 @@ body {
 
             @media #{$small} {
                 font-size: 0.8rem;
+                padding-bottom: 3vw;
             }
         }
-
-
 
         //stellt die Projekt-beschreibung ueber die Bilder
         @media #{$small} {
@@ -452,49 +430,22 @@ body {
 // https: //codepen.io/ongtiffany/pen/BoOeQV
 // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img
 
+// Kontakt
+
 #contact-container {
-    margin-bottom: 8vh;
-    margin: 0 7vw 8vh 7vw;
+    margin: 0 7vw 4vw 7vw;
 
     @media #{$small} {
-        margin: 0 3vw 8vh 3vw;
-    }
-
-    @media #{$small} {
-        margin: 0 0 4vh 0;
+        margin: 0 0 8vh 0;
     }
 }
-
-// .trennungsbalken {
-//     display: flex;
-//     height: 0.1rem;
-//     margin: 0 12vw;
-//     justify-content: space-between;
-//     // padding: 0 7vw;
-
-// .or,
-// .ol {
-//     // background: url(../../images/contact.JPG);
-//     // opacity: 0.7;
-//     // background-color: lighten($darkgrey, 35%);
-//     // width: 2vw;
-//     // }
-
-// }
 
 
 #contact {
     display: grid;
     grid-template-columns: 0.2rem 1fr 0.2rem;
-
-    // padding: 0 7vw;
     grid-gap: 4vw;
     align-items: center;
-
-
-    // .cd-side-middle {
-    //     padding-bottom: 2vw;
-    // }
 
     .contact-heading {
         margin-bottom: 2.5rem;
@@ -538,6 +489,7 @@ body {
 
         @media #{$small} {
             grid-gap: 0.8rem;
+            border-left: 0.15rem solid lighten($darkgrey, 30%);
             // color: green;
         }
 
@@ -576,7 +528,6 @@ body {
     }
 
 }
-
 
 /* The Modal (background) */
 //source: https://www.w3schools.com/howto/howto_css_modal_images.asp
