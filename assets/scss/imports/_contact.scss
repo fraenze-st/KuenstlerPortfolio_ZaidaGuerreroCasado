@@ -1,46 +1,19 @@
+// Kontakt
+
 #contact-container {
-    margin-bottom: 8vh;
-    margin: 0 7vw 8vh 7vw;
+    margin: 0 1vw 4vw 1vw;
 
     @media #{$small} {
-        margin: 0 3vw 8vh 3vw;
-    }
-
-    @media #{$small} {
-        margin: 0 0 4vh 0;
+        margin: 0 0 8vh 0;
     }
 }
-
-// .trennungsbalken {
-//     display: flex;
-//     height: 0.1rem;
-//     margin: 0 12vw;
-//     justify-content: space-between;
-//     // padding: 0 7vw;
-
-// .or,
-// .ol {
-//     // background: url(../../images/contact.JPG);
-//     // opacity: 0.7;
-//     // background-color: lighten($darkgrey, 35%);
-//     // width: 2vw;
-//     // }
-
-// }
 
 
 #contact {
     display: grid;
     grid-template-columns: 0.2rem 1fr 0.2rem;
-
-    // padding: 0 7vw;
     grid-gap: 4vw;
     align-items: center;
-
-
-    // .cd-side-middle {
-    //     padding-bottom: 2vw;
-    // }
 
     .contact-heading {
         margin-bottom: 2.5rem;
@@ -71,10 +44,10 @@
 
     .contact-details {
         display: grid;
-        grid-template-columns: 60% 1fr;
+        grid-template-columns: 65% 1fr;
         grid-gap: 3rem;
         justify-content: center;
-        padding-left: 3vw;
+        padding-left: 2vw;
         border-left: 0.2rem solid lighten($darkgrey, 30%);
 
         @media #{$middle} {
@@ -84,6 +57,7 @@
 
         @media #{$small} {
             grid-gap: 0.8rem;
+            border-left: 0.15rem solid lighten($darkgrey, 30%);
             // color: green;
         }
 

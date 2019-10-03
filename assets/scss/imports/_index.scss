@@ -1,0 +1,222 @@
+#landingPage {
+    height: 100vh;
+}
+
+
+#heading {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 5vw;
+
+    @media #{$small} {
+        margin: 0 3.7vw;
+        // color: green;
+    }
+
+
+    h1 {
+        font-size: 2.4rem;
+        margin-top: 25vh;
+        margin-bottom: 0.5rem;
+        letter-spacing: 0.8rem;
+
+        @media #{$tall} {
+            font-size: 2rem;
+        }
+
+        @media #{$middle} {
+            font-size: 1.5rem;
+            margin-top: 25vh;
+        }
+
+        @media #{$small} {
+            font-size: 1.4rem;
+            margin-top: 15vh;
+            margin-bottom: 1rem;
+            // color: green;
+        }
+    }
+
+    p {
+        font-size: 1.4em;
+        letter-spacing: 0.4rem;
+
+        @media #{$tall} {
+            font-size: 1.2rem;
+        }
+
+        @media #{$middle} {
+            font-size: 1rem;
+        }
+
+        @media #{$small} {
+            font-size: 0.8rem;
+            color: darken($darkgrey, 15%);
+
+        }
+
+        // color: $darkgrey;
+    }
+
+    &::after {
+        content: "";
+        // background: url(../assets/images/DSC_0061_2a.JPG);
+        background: url(../images/DSC_0061_2a.JPG);
+        background-size: cover;
+        background-attachment: absolute;
+        opacity: 0.9;
+        /* Add the blur effect */
+        // filter: blur(2px);
+        // -webkit-filter: blur(2px);
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+        /* transparent background-image */
+        /* https://css-tricks.com/snippets/css/transparent-background-images/ */
+    }
+}
+
+
+
+// projects
+
+#projects-container {
+
+    // height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 4vw;
+
+
+    .pc-heading {
+        @include sub-heading();
+        margin-bottom: 4rem;
+
+        @media #{$small} {
+            margin-bottom: 2rem;
+        }
+    }
+
+    #project-teaser {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 8vw;
+        justify-content: center;
+        margin: 0 auto;
+
+        @media #{$middle} {
+            grid-template-columns: 1fr;
+            // grid-gap: 4vw;
+        }
+
+
+        .pt-project {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            justify-content: center;
+            width: 25rem;
+            height: 22rem;
+
+
+
+            @media #{$middle} {
+                width: 20rem;
+                height: 17rem;
+                margin-bottom: 4vh;
+            }
+
+            @media #{$small} {
+                width: 15rem;
+                height: 12rem;
+            }
+
+            .image {
+                object-fit: cover;
+                border-top: 0.16rem solid darken($lightgrey, 30%);
+                border-bottom: 0.16rem solid darken($lightgrey, 30%);
+                padding: 0.5rem 0;
+                width: 25rem;
+                height: 20rem;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+
+                @media #{$middle} {
+                    width: 20rem;
+                    height: 15rem;
+
+                }
+
+                @media #{$small} {
+                    width: 15rem;
+                    height: 10rem;
+                    padding: 0.3rem 0;
+                    border-top: 0.1rem solid darken($lightgrey, 30%);
+                    border-bottom: 0.1rem solid darken($lightgrey, 30%);
+                }
+            }
+        }
+
+        .project-description {
+            text-align: center;
+            word-spacing: 0.1rem;
+        }
+    }
+}
+
+
+
+// CV Container
+
+
+#cv-container {
+    display: flex;
+    flex-direction: column;
+    margin: 7vw 15vw 5vw 15vw;
+    justify-content: center;
+
+    @media #{$small} {
+        margin: 10vw 11vw 10vw 11vw;
+    }
+
+    .cv-heading {
+        @include sub-heading();
+        margin-bottom: 1rem;
+
+
+        @media #{$small} {
+            margin-bottom: 0;
+        }
+
+    }
+
+    .cv-years {
+        margin: 0rem auto;
+        align-content: center;
+        // padding: 2vw 20vw 5vw 20vw;
+
+        h4 {
+            margin-bottom: 0.4rem;
+            margin-top: 1.7rem;
+
+        }
+
+        p {
+            margin-bottom: 0.7rem;
+            line-height: 1.5rem;
+            // font-size: 1rem;
+
+            // @media #{$small} {
+            //     font-size: 0.8rem;
+            // }
+
+        }
+    }
+}

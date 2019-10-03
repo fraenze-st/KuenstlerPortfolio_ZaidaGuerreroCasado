@@ -29,9 +29,28 @@ h5 {
     text-transform: capitalize;
 }
 
-h2 {
-    font-size: 2.1rem;
+h4 {
+    font-size: 1.1rem;
+
+    @media #{$tall} {
+        font-size: 1rem;
+    }
+
+    @media #{$small} {
+        font-size: 0.8rem;
+    }
 }
+
+p {
+    @media #{$tall} {
+        font-size: 0.93rem;
+    }
+
+    @media #{$small} {
+        font-size: 0.75rem;
+    }
+}
+
 
 body {
     background-color: $background;
@@ -51,10 +70,5 @@ body {
     &::-webkit-scrollbar-thumb:hover {
         background: rgba(89, 128, 134, 0.7);
     }
-
-    @media #{$small} {
-        overflow-x: hidden;
-    }
-
 
 }

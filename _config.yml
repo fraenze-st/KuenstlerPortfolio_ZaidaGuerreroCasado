@@ -25,6 +25,11 @@ github_username: fraenze-st
 # Build settings
 markdown: kramdown
 
+# https://stackoverflow.com/questions/32045976/sass-wont-compile-file-unreadable-or-not-found
+sass:
+    sass_dir: /assets/scss/
+    style: :nested
+
 collections:
   posts:
     permalink: /:title/

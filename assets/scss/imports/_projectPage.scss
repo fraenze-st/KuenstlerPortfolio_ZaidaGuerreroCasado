@@ -1,0 +1,106 @@
+//changes only for projekte html
+.navbar-container {
+    .navbar-home {
+
+        a {
+            // padding: 0 0.5rem;
+            border-left: 0.2rem solid darken($lightgrey, 10%);
+
+            color: lighten($darkgrey, 15%);
+
+            &:hover {
+                background-color: rgba($lightgrey, 0.9);
+            }
+        }
+    }
+
+    // .navbar-links {
+    //     border-top: 0.08rem solid lighten($darkgrey, 50%);
+    // }
+
+    .nb-right {
+        letter-spacing: 0.3rem;
+
+        // margin-left: 3vw;
+        a {
+            color: lighten($darkgrey, 30%);
+
+            &:hover {
+                background-color: rgba($lightgrey, 0.9);
+            }
+        }
+    }
+}
+
+
+// projects
+
+.main-container {
+    background-color: $background;
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    grid-gap: 2vw;
+    padding: 4vw 5vw;
+
+    @media #{$small} {
+        grid-template-columns: 1fr;
+        padding: 5vw 5vw;
+    }
+
+
+    .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2vw;
+
+        @media #{$middle} {
+            grid-template-columns: 1fr
+        }
+
+        @media #{$small} {
+            grid-template-columns: 1fr
+        }
+
+        // padding: 0 4vw;
+        // align-items: center;
+        // justify-items: center;
+
+        .project-image {
+            margin-bottom: 2vw;
+            transition: 0.1s ease-in;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .project-description {
+        @media #{$small} {
+            padding-bottom: 3vw;
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            word-spacing: 0.1rem;
+            letter-spacing: 0.1rem;
+            margin-bottom: 0.5vh;
+
+            @media #{$middle} {
+                font-size: 0.95rem;
+            }
+
+            @media #{$small} {
+                font-size: 0.8rem;
+                padding-bottom: 3vw;
+            }
+        }
+
+        //stellt die Projekt-beschreibung ueber die Bilder
+        @media #{$small} {
+            grid-row-start: 1;
+        }
+    }
+
+}
