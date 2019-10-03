@@ -5,18 +5,53 @@ year: "2018"
 place: "Haus, Leipzig"
 
 image-small: ../assets/images/project6.jpg
-image-middle: ../assets/images/project5.jpg
+# image-big: ../assets/images/project5.jpg
+images-big:
+  - image_path: ../assets/images/project2.jpg
+    title: Birthday Cake
+  - image_path: ../assets/images/project7.jpg
+    title: Black Forest
 
-# images-left:
-#   - image_path: ../assets/images/project6.jpg
-#     title: Apple Pie
-#   - image_path: ../assets/images/project1.jpg
-#     title: Birthday Cake
-# images-right:
-#   - image_path: ../assets/images/project2.jpg
-#     title: Apple Pie
+images-left:
+  - image_path: ../assets/images/project6.jpg
+    title: Apple Pie
+  - image_path: ../assets/images/project1.jpg
+    title: Birthday Cake
+images-right:
+  - image_path: ../assets/images/project2.jpg
+    title: Apple Pie
 
 ---
+#### Master Ausstellung
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu  <br>
+<br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+<!-- zweimal <br> und du hast einen Abstand zwischen den Zeilen  -->
+ <br>
+<br>
+
+#### Dies ist eine Überschrift.
+
+Emphasis
+
+_Text_
+	<!-- Displays text in italics -->
+
+**Text**
+	<!-- Displays the text in bold -->
+
+**_Text_**
+
+<!-- links -->
+[I'm an inline-style link](https://www.google.com)
+
+<!-- listen -->
+&nbsp;&nbsp; - Hund
+
+&nbsp;&nbsp; - Hund
+
+&nbsp;&nbsp; - Hund
+
+
 

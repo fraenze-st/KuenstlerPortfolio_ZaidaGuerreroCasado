@@ -72,7 +72,7 @@
         }
     }
 
-    .project-description {
+    .project-title {
         @media #{$small} {
             padding-bottom: 3vw;
             //stellt die Projekt-beschreibung ueber die Bilder
@@ -94,6 +94,11 @@
                 padding-bottom: 3vw;
             }
         }
+
+        a {
+            text-decoration: underline;
+        }
+
 
     }
 

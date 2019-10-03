@@ -25,8 +25,10 @@
         </div>
         <div class="main-container">
             <div class="project-gallery">
-                <!-- <img class="project-image image-big" src="{{ page.image-middle }}" alt="{{ image-middle.title}}"
-                    style="width:100%"> -->
+                {% for image-big in page.images-big %}
+                <img class="project-image image-big" src="{{ image-big.image_path }}" alt="{{ image-big.title}}"
+                    style="width:100%">
+                {% endfor %}
                 <div class="row">
                     <div class="column">
                         {% for image-left in page.images-left %}
@@ -44,7 +46,7 @@
                 <img class="project-image image-big" src="{{ page.image-middle }}" alt="{{ image-middle.title}}"
                     style="width:100%">
             </div>
-            <div class="project-description">
+            <div class="project-title">
                 <h4>{{ page.title }}</h4>
                 {{ content }}
             </div>
