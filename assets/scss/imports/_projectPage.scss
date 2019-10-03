@@ -39,7 +39,7 @@
     background-color: $background;
     display: grid;
     grid-template-columns: 1fr 40%;
-    grid-gap: 2vw;
+    grid-column-gap: 2vw;
     padding: 4vw 5vw;
 
     @media #{$small} {
@@ -51,7 +51,7 @@
     .row {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 2vw;
+        grid-column-gap: 2vw;
 
         @media #{$middle} {
             grid-template-columns: 1fr
@@ -61,12 +61,8 @@
             grid-template-columns: 1fr
         }
 
-        // padding: 0 4vw;
-        // align-items: center;
-        // justify-items: center;
-
         .project-image {
-            margin-bottom: 2vw;
+            margin-bottom: 1.7vw;
             transition: 0.1s ease-in;
             cursor: pointer;
 
@@ -79,6 +75,8 @@
     .project-description {
         @media #{$small} {
             padding-bottom: 3vw;
+            //stellt die Projekt-beschreibung ueber die Bilder
+            grid-row-start: 1;
         }
 
         h4 {
@@ -97,10 +95,6 @@
             }
         }
 
-        //stellt die Projekt-beschreibung ueber die Bilder
-        @media #{$small} {
-            grid-row-start: 1;
-        }
     }
 
 }
