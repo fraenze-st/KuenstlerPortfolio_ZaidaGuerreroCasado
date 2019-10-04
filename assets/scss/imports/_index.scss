@@ -105,7 +105,8 @@
     #project-teaser {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 8vw;
+        grid-column-gap: 8vw;
+        grid-row-gap: 8vw;
         justify-content: center;
         margin: 0 auto;
 
