@@ -134,11 +134,13 @@
 
         @media #{$small} {
             // https://iamsteve.me/blog/entry/horizontal-scrolling-responsive-menu
+            flex-wrap: nowrap;
             white-space: nowrap;
             overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
+            // -webkit-overflow-scrolling: touch;
             -ms-overflow-style: -ms-autohiding-scrollbar;
-            flex-wrap: nowrap;
+            scrollbar-width: none;
+
 
             .nb-scroll::-webkit-scrollbar {
                 display: none;
@@ -189,6 +191,25 @@
                     // color: green;
                 }
             }
+
+
+        }
+    }
+}
+
+.icon-arrows {
+    text-align: center;
+
+    .fa-chevron-left,
+    .fa-chevron-right,
+    .span-scroll {
+        visibility: hidden;
+
+        @media #{$small} {
+            visibility: visible;
+            font-size: 0.6rem;
+            color: darken($lightgrey, 20%);
+            margin: 0 0.4rem;
         }
     }
 }
