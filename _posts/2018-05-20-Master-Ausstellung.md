@@ -28,31 +28,3 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eg
 <br>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu 
 
-<!--  <br> macht einen Abstand zwischen den Zeilen, benutze soviele wie du magst -->
-<br>
-<br>
-
-#### Dies ist eine Überschrift.
-
-Emphasis
-
-_Text_
-	<!-- Displays text in italics -->
-
-**Text**
-	<!-- Displays the text in bold -->
-
-**_Text_**
-
-<!-- links -->
-[I'm an inline-style link](https://www.google.com)
-
-<!-- listen -->
-&nbsp;&nbsp; - Hund
-
-&nbsp;&nbsp; - Hund
-
-&nbsp;&nbsp; - Hund
-
-
-

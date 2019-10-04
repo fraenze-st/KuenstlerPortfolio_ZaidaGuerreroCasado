@@ -167,6 +167,10 @@
         .project-title {
             text-align: center;
             word-spacing: 0.1rem;
+
+            h4:hover {
+                color: lighten($darkgrey, 15%);
+            }
         }
     }
 }
