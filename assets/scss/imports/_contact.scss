@@ -20,6 +20,11 @@
         letter-spacing: 0.3rem;
         text-align: center;
 
+        @media #{$small} {
+            margin-bottom: 1.5rem;
+        }
+
+
         h2 {
             font-size: 2.1rem;
 
@@ -58,6 +63,7 @@
 
         @media #{$small} {
             grid-gap: 0.8rem;
+            grid-template-columns: 58% 1fr;
             border-left: 0.15rem solid lighten($darkgrey, 30%);
             // color: green;
         }
