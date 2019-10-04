@@ -56,15 +56,6 @@
         }
     }
 
-    // .navbar-burger {
-    //     visibility: hidden;
-
-    //     @media #{$middle} {
-    //         visibility: visible;
-
-    //     }
-    // }
-
     .navbar-links {
         display: flex;
         list-style: none;
@@ -106,24 +97,9 @@
     }
 }
 
-// .navbar-burger {
-//     display: none;
-//     cursor: pointer;
-//     // height: 0.8rem;
-
-//     .fa-bars {
-//         color: lighten($darkgrey, 20%);
-//         font-size: 0.9rem;
-//     }
-
-//     @media #{$small} {
-//         display: block;
-
-//     }
-// }
 
 
-// navbar projekte 
+// navbar projekte auf projekte html
 
 .navbar-projects-wrapper {
     @include PaddingContainer();
@@ -157,10 +133,18 @@
         margin-top: 0.5rem;
 
         @media #{$small} {
-            flex-direction: column;
-            // flex-wrap: nowrap;
-            // color: green;
+            // https://iamsteve.me/blog/entry/horizontal-scrolling-responsive-menu
+            white-space: nowrap;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            -ms-overflow-style: -ms-autohiding-scrollbar;
+            flex-wrap: nowrap;
+
+            .nb-scroll::-webkit-scrollbar {
+                display: none;
+            }
         }
+
 
         .nb-p-project {
             margin-right: 0.6rem;
