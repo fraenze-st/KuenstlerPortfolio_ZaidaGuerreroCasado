@@ -114,6 +114,7 @@
         font-size: 1.1rem;
         text-transform: none;
         color: lighten($darkgrey, 10%);
+        padding: 0.4rem;
 
         @media #{$middle} {
             font-size: 0.9rem;
@@ -138,13 +139,13 @@
             white-space: nowrap;
             overflow-x: auto;
             -webkit-overflow-scrolling: touch;
-            // -ms-overflow-style: -ms-autohiding-scrollbar;
-            // scrollbar-width: none;
+            -ms-overflow-style: -ms-autohiding-scrollbar;
+            scrollbar-width: none;
 
 
-            // .nb-scroll::-webkit-scrollbar {
-            //     display: none;
-            // }
+            .nb-scroll::-webkit-scrollbar {
+                display: none;
+            }
         }
 
 

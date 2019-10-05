@@ -53,16 +53,16 @@
         grid-column-gap: 3rem;
         grid-row-gap: 1rem;
         justify-content: center;
-        padding-left: 2vw;
+        padding-left: 1.5vw;
         border-left: 0.2rem solid lighten($darkgrey, 30%);
 
         @media #{$middle} {
-            grid-gap: 1.5rem;
+            grid-column-gap: 1.5rem;
             // color: green;
         }
 
         @media #{$small} {
-            grid-gap: 0.8rem;
+            grid-column-gap: 0.8rem;
             grid-template-columns: 58% 1fr;
             border-left: 0.15rem solid lighten($darkgrey, 30%);
             // color: green;
