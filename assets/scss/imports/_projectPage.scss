@@ -2,15 +2,13 @@
 .navbar-container {
     @media #{$middle} {
         flex-direction: column;
-        align-items: flex-start
+        // align-items: flex-start
     }
 
 
     .navbar-home {
 
         a {
-            visibility: visible;
-            // padding: 0 0.5rem;
             border-left: 0.2rem solid darken($lightgrey, 10%);
 
             color: lighten($darkgrey, 15%);
@@ -19,9 +17,6 @@
                 background-color: rgba($lightgrey, 0.9);
             }
 
-            @media #{$middle} {
-                display: flex;
-            }
         }
     }
 

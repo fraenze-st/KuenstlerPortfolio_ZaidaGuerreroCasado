@@ -212,6 +212,10 @@
             margin-bottom: 0.4rem;
             margin-top: 1.7rem;
 
+            @media #{$small} {
+                margin-top: 1rem;
+            }
+
         }
 
         h3 {
@@ -219,10 +223,24 @@
             letter-spacing: 0.2rem;
             font-size: 1.3rem;
 
+            @media #{$middle} {
+                font-size: 1.1rem;
+            }
+
+            @media #{$small} {
+                font-size: 0.95rem;
+                margin-top: 2rem;
+            }
+
             &:before {
                 content: "▒";
                 margin-right: 0.2rem;
                 color: lighten($darkgrey, 40%);
+
+                @media #{$middle} {
+                    content: "■";
+                    margin-right: 0;
+                }
             }
 
         }
