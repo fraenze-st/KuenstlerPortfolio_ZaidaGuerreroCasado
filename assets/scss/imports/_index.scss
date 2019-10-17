@@ -16,23 +16,24 @@
 
 
     h1 {
-        font-size: 2.4rem;
-        margin-top: 25vh;
+        font-size: 2.8rem;
+        margin-top: 30vh;
         margin-bottom: 0.5rem;
-        letter-spacing: 0.8rem;
+        letter-spacing: 1rem;
 
         @media #{$tall} {
             font-size: 2rem;
         }
 
         @media #{$middle} {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             margin-top: 25vh;
+            letter-spacing: 0.8rem;
         }
 
         @media #{$small} {
-            font-size: 1.4rem;
-            margin-top: 15vh;
+            font-size: 1.5rem;
+            margin-top: 25vh;
             margin-bottom: 1rem;
             // color: green;
         }
@@ -221,6 +222,7 @@
             &:before {
                 content: "▒";
                 margin-right: 0.2rem;
+                color: lighten($darkgrey, 40%);
             }
 
         }

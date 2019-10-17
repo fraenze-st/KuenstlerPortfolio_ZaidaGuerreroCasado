@@ -18,6 +18,12 @@
 
     @media #{$middle} {
         flex-direction: column;
+        align-items: flex-end;
+        margin-right: 1rem;
+    }
+
+    @media #{$small} {
+        align-items: flex-start;
     }
 
     // height: 4rem;
@@ -31,7 +37,7 @@
         }
 
         @media #{$small} {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
         }
     }
 
@@ -39,6 +45,7 @@
         flex: 1;
 
         a {
+            visibility: hidden;
             text-decoration: none;
             color: lighten($darkgrey, 10%);
             padding: 0.2rem 0.5rem;
@@ -52,6 +59,8 @@
 
             @media #{$middle} {
                 border-bottom: 0.15rem solid lighten($darkgrey, 30%);
+                letter-spacing: 0.2rem;
+                display: none;
             }
 
         }
@@ -68,7 +77,7 @@
         }
 
         @media #{$middle} {
-            width: 50%;
+            width: 55%;
         }
     }
 
