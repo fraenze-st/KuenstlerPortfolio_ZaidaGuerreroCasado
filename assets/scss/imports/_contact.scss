@@ -1,37 +1,40 @@
 // Kontakt
 
-#contact-container {
-    margin: 0 15vw 4vw 15vw;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
+#contact {
+    // padding: 1.5vw 15vw 2vw 15vw;
+    padding: 1.5vw 5vw 2vw 5vw;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+
+    // background: darken($light, 1%);
+    // background: url(../images/Hintergrundbild/DSC_0061_2a.JPG);
+    // border-top: 0.1rem solid darken($lightgrey, 5%);
+    @media #{$tall} {
+        padding: 1.5vw 2vw 2vw 5vw;
+        grid-template-columns: 25% 1fr;
+    }
 
     @media #{$middle} {
-        margin: 0 3vw 6vh 3vw;
+        padding: 1.5vw 2vw 2vw 5vw;
+        grid-template-columns: 1fr;
     }
 
     @media #{$small} {
-        margin: 0 2vw 6vh 2vw;
+        padding: 0 2vw 2rem 0.7rem;
     }
 
-    // @media #{$small} {
-    //     // margin: 0 0.6vw 6vh 0.6vw;
-    // }
-}
-
-
-#contact {
-    display: grid;
-    grid-template-columns: 0 1fr 0;
-    align-items: center;
-
     .contact-heading {
-        margin-bottom: 2.5rem;
+        // margin-bottom: 1.5rem;
         letter-spacing: 0.3rem;
         text-align: center;
+        margin-right: 3rem;
+        border-left: 0.3rem solid lighten($darkgrey, 30%);
+        border-right: 0.3rem solid lighten($darkgrey, 30%);
 
-        @media #{$small} {
+        @media #{$middle} {
             margin-bottom: 1.5rem;
+            border-left: 0rem solid lighten($darkgrey, 30%);
+            border-right: 0rem solid lighten($darkgrey, 30%);
         }
 
 
@@ -58,19 +61,18 @@
     }
 
     .contact-details {
+        // background: pink;
         display: grid;
-        grid-template-columns: 65% 1fr;
-        // grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-column-gap: 3rem;
         grid-row-gap: 1rem;
         justify-content: center;
-        padding-left: 1.3vw;
-
-        border-left: 0.15rem solid lighten($darkgrey, 30%);
-        // border-right: 0.15rem solid lighten($darkgrey, 30%);
+        // padding-left: 1.3vw;
+        // border-left: 0.15rem solid lighten($darkgrey, 30%);
 
         @media #{$middle} {
             grid-column-gap: 1.5rem;
+            border-left: 0.15rem solid lighten($darkgrey, 30%);
             padding-left: 2vw;
         }
 
@@ -78,8 +80,9 @@
             padding-left: 0.4rem;
             grid-row-gap: 0.6rem;
             grid-column-gap: 0.5rem;
-            grid-template-columns: 1fr 30%;
             border-left: 0.15rem solid lighten($darkgrey, 30%);
+            // grid-template-columns: 1fr 30%;
+            // border-left: 0.1rem solid lighten($darkgrey, 30%);
             // color: green;
         }
 
