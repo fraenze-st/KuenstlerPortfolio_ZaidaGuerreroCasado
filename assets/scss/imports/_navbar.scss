@@ -80,6 +80,10 @@
         @media #{$middle} {
             width: 45%;
         }
+
+        @media #{$small} {
+            width: 70%;
+        }
     }
 
     .nb-right {
